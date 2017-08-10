@@ -8,5 +8,10 @@
             "name": "Aleksandr Novikov",
             "email": "alexndr.novikov@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Doc\\": "src"
+        }
+    }
 }
