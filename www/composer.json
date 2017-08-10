@@ -1,0 +1,12 @@
+{
+    "name": "aleksandrnovikov/www",
+    "require": {
+        "symfony/var-dumper": "^3.3"
+    },
+    "authors": [
+        {
+            "name": "Aleksandr Novikov",
+            "email": "alexndr.novikov@gmail.com"
+        }
+    ]
+}

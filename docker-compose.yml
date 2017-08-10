@@ -1,0 +1,43 @@
+version: '2'
+services:
+  php:
+    build: ./images/php
+    links:
+      - mysql
+      - postgresql
+    container_name: php-zend-exam
+    volumes:
+      - ./www:/var/www
+  nginx:
+    container_name: nginx-zend-exam
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./hosts:/etc/nginx/conf.d:ro
+      - ./www:/var/www
+      - ./logs:/var/log/nginx
+    links:
+      - php
+  mysql:
+    container_name: mysql-zend-exam
+    image: mysql:8
+    ports:
+        - "3307:3306"
+    volumes:
+        - ./mysql:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: qwerty
+        MYSQL_DATABASE: zend
+        MYSQL_USER: user
+        MYSQL_PASSWORD: qwerty
+  postgresql:
+    container_name: postgresql-zend-exam
+    image: postgres:9.6.3
+    ports:
+      - "5432:5432"
+    environment:
+      - DB_PASS=qwerty
+    volumes:
+      - ./postgresql:/var/lib/postgresql
