@@ -1,7 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aleksandrnovikov
- * Date: 10.08.17
- * Time: 12:57
- */
+echo 'You can use ;<br>';
+?>
+<?=
+    'you can skip ; if php tag is closed right after;<br>'
+?>
+
+<?php
+echo 'you can skip ?> tag, and it is recommended, but then ; is required<br>';

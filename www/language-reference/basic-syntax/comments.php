@@ -1,7 +1,12 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: aleksandrnovikov
- * Date: 10.08.17
- * Time: 12:57
+ * multi
+ * line
+ * comment
  */
+//single line comment
+# single line unix-style comment\
+?>
+<?php # выведет?>текст
+<?php // выведет?>текст
+<?= '' // ничего ?>
