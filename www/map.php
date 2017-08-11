@@ -8,10 +8,10 @@ return [
             new \Doc\models\DocPage('Comments', 'comments'),
         ]),
         new \Doc\models\SubCategory('Types', 'types', [
-            new \Doc\models\DocPage('Introduction','introduction'),
+            new \Doc\models\DocPage('Introduction','intro'),
             new \Doc\models\DocPage('Booleans','booleans'),
             new \Doc\models\DocPage('Integers','integers'),
-            new \Doc\models\DocPage('Floating point numbers','Floating point numbers'),
+            new \Doc\models\DocPage('Floating point numbers','floating'),
             new \Doc\models\DocPage('Strings','strings'),
             new \Doc\models\DocPage('Arrays','arrays'),
             new \Doc\models\DocPage('Iterables','iterables'),
