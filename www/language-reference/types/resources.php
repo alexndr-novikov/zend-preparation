@@ -1,7 +1,8 @@
+<h1>Resources</h1>
 <?php
-/**
- * Created by PhpStorm.
- * User: aleksandrnovikov
- * Date: 11.08.17
- * Time: 14:12
- */
+
+$resource = curl_init();
+
+var_dump( get_resource_type($resource)); // curl
+
+// converting to resources has no reason
