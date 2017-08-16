@@ -20,6 +20,7 @@ return [
             new \Doc\models\DocPage('NULL','null'),
             new \Doc\models\DocPage('Callbacks / Callables','callbacks-callables'),
             new \Doc\models\DocPage('Pseudo-types and variables used in this documentation','pseudo-types'),
+            new \Doc\models\DocPage('Type Juggling','type-manipulations'),
         ]),
     ]),
 ];
