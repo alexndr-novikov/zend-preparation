@@ -22,5 +22,12 @@ return [
             new \Doc\models\DocPage('Pseudo-types and variables used in this documentation','pseudo-types'),
             new \Doc\models\DocPage('Type Juggling','type-manipulations'),
         ]),
+        new \Doc\models\SubCategory('Variables', 'variables', [
+            new \Doc\models\DocPage('Basics','basics'),
+            new \Doc\models\DocPage('Predefined Variables','predefined'),
+            new \Doc\models\DocPage('Variable scope','scope'),
+            new \Doc\models\DocPage('Variable variables','variable'),
+            new \Doc\models\DocPage('Variables From External Sources','external'),
+        ]),
     ]),
 ];
