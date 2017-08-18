@@ -1,1 +1,31 @@
+<h1>Predefined Variables</h1>
 <?php
+echo '<pre>';
+echo '<br>$GLOBALS: <br>';
+print_r($GLOBALS);
+echo '<br>$_SERVER: <br>';
+print_r($_SERVER);
+echo '<br>$_GET: <br>';
+print_r($_GET);
+echo '<br>$_POST: <br>';
+print_r($_POST);
+echo '<br>$_FILES: <br>';
+print_r($_FILES);
+echo '<br>$_REQUEST: <br>';
+print_r($_REQUEST);
+echo '<br>$_SESSION: <br>';
+print_r($_SESSION);
+echo '<br>$_ENV: <br>';
+print_r($_ENV);
+echo '<br>$_COOKIE: <br>';
+print_r($_COOKIE);
+echo '<br>$php_errormsg: <br>';
+print_r($php_errormsg);
+echo '<br>$HTTP_RAW_POST_DATA: <br>';
+print_r($HTTP_RAW_POST_DATA);
+echo '<br>$http_response_header: <br>';
+print_r($http_response_header);
+echo '<br>$argc: <br>';
+print_r($argc);
+echo '<br>$argv: <br>';
+print_r($argv);
