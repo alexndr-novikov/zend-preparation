@@ -3,3 +3,4 @@ logs
 mysql
 postgresql
 www/vendor
+www/composer.lock
