@@ -29,5 +29,9 @@ return [
             new \Doc\models\DocPage('Variable variables','variable'),
             new \Doc\models\DocPage('Variables From External Sources','external'),
         ]),
+        new \Doc\models\SubCategory('Constants', 'constants', [
+            new \Doc\models\DocPage('Syntax','syntax'),
+            new \Doc\models\DocPage('Magic constants','predefined'),
+        ]),
     ]),
 ];
