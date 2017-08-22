@@ -33,5 +33,11 @@ return [
             new \Doc\models\DocPage('Syntax','syntax'),
             new \Doc\models\DocPage('Magic constants','predefined'),
         ]),
+        new \Doc\models\SubCategory('Expressions', 'expressions', [
+            new \Doc\models\DocPage('Expressions','expressions'),
+        ]),
+        new \Doc\models\SubCategory('Operators', 'operators', [
+            new \Doc\models\DocPage('Operator Precedence','precedence'),
+        ]),
     ]),
 ];
