@@ -39,6 +39,16 @@ return [
         new \Doc\models\SubCategory('Operators', 'operators', [
             new \Doc\models\DocPage('Operator Precedence','precedence'),
             new \Doc\models\DocPage('Arithmetic Operators','arithmetic'),
+            new \Doc\models\DocPage('Assignment Operators','assignment'),
+            new \Doc\models\DocPage('Bitwise Operators','bitwise'),
+            new \Doc\models\DocPage('Comparison Operators','comparison'),
+            new \Doc\models\DocPage('Error Control Operators','errorcontrol'),
+            new \Doc\models\DocPage('Execution Operators','execution'),
+            new \Doc\models\DocPage('Incrementing/Decrementing Operators','increment'),
+            new \Doc\models\DocPage('Logical Operators','logical'),
+            new \Doc\models\DocPage('String Operators','string'),
+            new \Doc\models\DocPage('Array Operators','array'),
+            new \Doc\models\DocPage('Type Operators','type'),
         ]),
     ]),
 ];
