@@ -38,6 +38,7 @@ return [
         ]),
         new \Doc\models\SubCategory('Operators', 'operators', [
             new \Doc\models\DocPage('Operator Precedence','precedence'),
+            new \Doc\models\DocPage('Arithmetic Operators','arithmetic'),
         ]),
     ]),
 ];
