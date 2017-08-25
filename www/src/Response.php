@@ -22,7 +22,7 @@ class Response
         if(file_exists($this->filePath)) {
             $this->response =  $this->renderPhpFile('/var/www/src/views/layout.php', [
                 'content' => $this->renderPhpFile('/var/www/src/views/doc-page.php', [
-                    'contentSource' => file_get_contents($this->filePath),
+                    'contentSource' => htmlspecialchars(file_get_contents($this->filePath)),
                     'contentEval' => $this->renderPhpFile($this->filePath),
                 ]),
             ]);

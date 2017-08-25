@@ -8,8 +8,8 @@
 <table class="table">
     <thead>
     <tr>
-        <th>Sourse code</th>
-        <th>Eval</th>
+        <th style="width: 50%;">Sourse code</th>
+        <th style="width: 50%;">Eval</th>
     </tr>
     </thead>
     <tbody>
