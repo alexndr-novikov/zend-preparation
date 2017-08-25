@@ -1,9 +1,9 @@
 <?php
 require 'vendor/autoload.php';
 
-use Doc\models\MenuRenderer;
+$request = \Symfony\Component\HttpFoundation\Request::createFromGlobals();
 
-$mapSrc = include 'map.php';
-$map = new MenuRenderer($mapSrc);
-echo $map->render();
+$app = new \Doc\Application();
+$response = $app->handleRequest($request);
+$response->send();
 ?>
