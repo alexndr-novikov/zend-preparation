@@ -32,7 +32,7 @@ class DocPage
     {
         $this->directory = $dir;
         $this->createFile();
-        return "<li><a href='{$dir}/{$this->fileName}'>{$this->name}</a></li>";
+        return "<li><a href='/{$dir}/{$this->fileName}'>{$this->name}</a></li>";
     }
 
 }
