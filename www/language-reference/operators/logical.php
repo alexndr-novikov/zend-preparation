@@ -25,3 +25,6 @@ $c = false && foo(); // no foo() call
 $d = false and foo(); // no foo() call
 
 var_dump($a, $b, $c, $d);
+echo "<br><br>";
+
+var_dump(true xor true, true xor false, false xor true, false xor false);
