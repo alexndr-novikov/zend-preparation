@@ -40,7 +40,10 @@ var_dump($c instanceof $a); echo "<br>"; // true
 var_dump($d instanceof InterfaceA); echo "<br>"; // true
 var_dump($d instanceof $interfaceName); echo "<br>"; // true
 
-// cant use constants in instanceof - generates fatal error
-// was added in PHP 5, before it is_a() was used
-// on release of PHP5 is_a was marked as deprecated, but since 5.3 it was allowed again
-// Before 5.1 instanceof called __autoload if class didnt exist, to avoid it class name should be placed in variable as string
+/**
+ * cant use constants in instanceof - generates fatal error
+ * was added in PHP 5, before it is_a() was used
+ * on release of PHP5 is_a was marked as deprecated, but since 5.3 it was allowed again
+ * Before 5.1 instanceof called __autoload if class didn't exist
+ * To avoid it class name should be placed in variable as string
+ */
