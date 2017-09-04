@@ -24,6 +24,9 @@ class DocPage
     private function createFile()
     {
         if(!file_exists($this->getFilePath())) {
+            if(!is_dir($this->directory)) {
+                mkdir($this->directory);
+            }
             file_put_contents($this->getFilePath(), "<h1>{$this->name}</h1><?php\r\n");
         }
     }
