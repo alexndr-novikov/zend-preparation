@@ -56,7 +56,7 @@ return [
             new \Doc\models\DocPage('elseif/else if','elseif'),
             new \Doc\models\DocPage('Alternative syntax for control structures','alternative-syntax'),
             new \Doc\models\DocPage('while','while'),
-            new \Doc\models\DocPage('do-​while','do-​while'),
+            new \Doc\models\DocPage('do-while','do-while'),
             new \Doc\models\DocPage('for','for'),
             new \Doc\models\DocPage('foreach','foreach'),
             new \Doc\models\DocPage('break','break'),
@@ -66,8 +66,8 @@ return [
             new \Doc\models\DocPage('return','return'),
             new \Doc\models\DocPage('require','require'),
             new \Doc\models\DocPage('include','include'),
-            new \Doc\models\DocPage('require_​once','require_​once'),
-            new \Doc\models\DocPage('include_​once','include_​once'),
+            new \Doc\models\DocPage('require_once','require_once'),
+            new \Doc\models\DocPage('include_once','include_once'),
             new \Doc\models\DocPage('goto','goto'),
 
 
