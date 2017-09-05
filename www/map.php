@@ -69,21 +69,14 @@ return [
             new \Doc\models\DocPage('require_once','require_once'),
             new \Doc\models\DocPage('include_once','include_once'),
             new \Doc\models\DocPage('goto','goto'),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        ]),
+        new \Doc\models\SubCategory('Functions', 'functions', [
+            new \Doc\models\DocPage('User-defined functions','user-defined'),
+            new \Doc\models\DocPage('Function arguments','arguments'),
+            new \Doc\models\DocPage('Returning values','returning-values'),
+            new \Doc\models\DocPage('Variable functions','variable-functions'),
+            new \Doc\models\DocPage('Internal (built-​in) functions','internal'),
+            new \Doc\models\DocPage('else','anonymous'),
         ]),
     ]),
 ];
