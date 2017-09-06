@@ -76,7 +76,7 @@ return [
             new \Doc\models\DocPage('Returning values','returning-values'),
             new \Doc\models\DocPage('Variable functions','variable-functions'),
             new \Doc\models\DocPage('Internal (built-​in) functions','internal'),
-            new \Doc\models\DocPage('else','anonymous'),
+            new \Doc\models\DocPage('Anonymous functions','anonymous'),
         ]),
     ]),
 ];
