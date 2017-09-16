@@ -84,6 +84,7 @@ return [
             new \Doc\models\DocPage('Class Constants','constants'),
             new \Doc\models\DocPage('Autoloading Classes','autoload'),
             new \Doc\models\DocPage('Constructors and Destructors','decon'),
+            new \Doc\models\DocPage('Constructors and Destructors : namespace feature','decon_namespace'),
             new \Doc\models\DocPage('Visibility','visibility'),
             new \Doc\models\DocPage('Object Inheritance','inheritance'),
             new \Doc\models\DocPage('Scope Resolution Operator (::)','paamayim-nekudotayim'),
