@@ -47,15 +47,15 @@ class ChildNoParentEcho extends ParentClass
 }
 
 new ParentClass;
-br();
+\Doc\helpers\HTML::br();
 new Child;
-br();
+\Doc\helpers\HTML::br();
 new ChildNoParentEcho;
 
 if((float)substr(PHP_VERSION, 0 , 3) < 7.2)
 {
-    br();
-    br();
+    \Doc\helpers\HTML::br();
+    \Doc\helpers\HTML::br();
     class DeprecatedConstructor
     {
         public function DeprecatedConstructor()

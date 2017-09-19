@@ -28,7 +28,7 @@ $arrayHandler = function () use ($array) {
         $value *= 2;
     });
 };
-br();
+\Doc\helpers\HTML::br();
 $arrayHandler();
 var_dump($array); // no ref - not modified
 

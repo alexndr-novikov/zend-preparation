@@ -10,7 +10,7 @@ class GrandClass
     public function family()
     {
         echo 'We are family';
-        br();
+        \Doc\helpers\HTML::br();
     }
 }
 
@@ -39,6 +39,6 @@ $parent->family();
 $child->family();
 
 
-echo 'Age: ' . $granny->getAge();br();
-echo 'Age: ' . $parent->getAge();br();
-echo 'Age: ' . $child->getAge();br();
+echo 'Age: ' . $granny->getAge();\Doc\helpers\HTML::br();
+echo 'Age: ' . $parent->getAge();\Doc\helpers\HTML::br();
+echo 'Age: ' . $child->getAge();\Doc\helpers\HTML::br();

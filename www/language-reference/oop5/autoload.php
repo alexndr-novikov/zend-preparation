@@ -13,16 +13,16 @@ spl_autoload_register(function ($class_name) {
 
 ?><h1>Autoloading Classes</h1><?php
 
-echo 'Use manually included class:';br();
+echo 'Use manually included class:';\Doc\helpers\HTML::br();
 
 $obj1 = new AnotherTest; // autoload not triggered - included manually
 
-echo 'Load first class:';br();
+echo 'Load first class:';\Doc\helpers\HTML::br();
 $obj = new Test;
 
 var_dump($obj); // autoload triggered
-br();
-echo 'Load second class:';br();
+\Doc\helpers\HTML::br();
+echo 'Load second class:';\Doc\helpers\HTML::br();
 $obj2 = new SecondAutoloaderTest;
 var_dump($obj2); // second autoload triggered
 

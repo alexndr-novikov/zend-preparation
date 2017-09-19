@@ -25,9 +25,9 @@ function classFunction($arg)
 }
 
 echo classFunction('Hello');
-br();
+\Doc\helpers\HTML::br();
 a();
-br();
+\Doc\helpers\HTML::br();
 // b(); - Fatal error
 function a() {echo __FUNCTION__ , __LINE__;}
 
@@ -36,9 +36,9 @@ if(true) {
 }
 
 a();
-br();
+\Doc\helpers\HTML::br();
 b();
-br();
+\Doc\helpers\HTML::br();
 function c()
 {
     echo __FUNCTION__ , __LINE__;
@@ -51,12 +51,12 @@ function c()
 
 // d(); - Fatal error here
 c();
-br();
+\Doc\helpers\HTML::br();
 d();
-br();
+\Doc\helpers\HTML::br();
 
 var_dump(new NewClass(''));
-br();
+\Doc\helpers\HTML::br();
 function recursive($a) {
     if($a < 400) {
         echo "$a ";

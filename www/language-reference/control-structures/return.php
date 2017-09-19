@@ -14,8 +14,8 @@ function getNull()
 }
 
 
-var_dump(getTen());br();
-var_dump(getNull());br();
+var_dump(getTen());\Doc\helpers\HTML::br();
+var_dump(getNull());\Doc\helpers\HTML::br();
 
 return;
 

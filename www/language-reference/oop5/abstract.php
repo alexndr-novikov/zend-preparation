@@ -12,7 +12,7 @@ abstract class AbstractClass
     public function echoStr()
     {
         echo 'string';
-        br();
+        \Doc\helpers\HTML::br();
     }
 }
 

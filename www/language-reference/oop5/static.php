@@ -18,15 +18,15 @@ class StaticHolder
 
 $obj = new StaticHolder();
 var_dump(StaticHolder::$staticA);
-br();
+\Doc\helpers\HTML::br();
 var_dump($obj::$staticA);
-br();
+\Doc\helpers\HTML::br();
 var_dump(StaticHolder::getB());
 
 $obj::setB('not b');
-br();
+\Doc\helpers\HTML::br();
 var_dump(StaticHolder::getB());
 $className = 'StaticHolder';
-br();
+\Doc\helpers\HTML::br();
 var_dump($className::getB());
 // var_dump(StaticHolder::$staticB); // causes an error

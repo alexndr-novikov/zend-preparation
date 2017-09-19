@@ -57,9 +57,9 @@ function get_anon_class()
 
     };
 }
-br();
+\Doc\helpers\HTML::br();
 var_dump(get_class(get_anon_class()) === get_class(get_anon_class())); // true
-br();
+\Doc\helpers\HTML::br();
 echo get_class(get_anon_class());
-br();
+\Doc\helpers\HTML::br();
 echo get_class(get_anon_class());

@@ -22,8 +22,8 @@ function func()
 }
 var_dump($a);
 func();
-br();
-br();
+\Doc\helpers\HTML::br();
+\Doc\helpers\HTML::br();
 
 include $_SERVER['DOCUMENT_ROOT'] . '/include_path/include_file_remote.php';
 

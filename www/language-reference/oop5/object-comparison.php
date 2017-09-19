@@ -18,16 +18,16 @@ $same = new ComparableExtended(true);
 $b = new Comparable(1);
 $o2 = $o;
 $o3 = clone $o;
-br();
+\Doc\helpers\HTML::br();
 var_dump($o == $b); // true
 var_dump($o === $b); // false
-br();
+\Doc\helpers\HTML::br();
 var_dump($o == $same); // false
 var_dump($o === $same); // false
-br();
+\Doc\helpers\HTML::br();
 var_dump($o == $o2); // true
 var_dump($o === $o2); // true
-br();
+\Doc\helpers\HTML::br();
 var_dump($o == $o3); // true
 var_dump($o === $o3); // false
 

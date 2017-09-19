@@ -16,7 +16,7 @@ while (true) {
     }
 }
 
-echo "Dobby is free!";br();
+echo "Dobby is free!";\Doc\helpers\HTML::br();
 
 for ($i = 0; $i < 100; $i++) {
     if($i == 10) break;

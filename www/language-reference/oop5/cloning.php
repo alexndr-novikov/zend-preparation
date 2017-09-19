@@ -21,7 +21,7 @@ $clone = clone $obj;
 var_dump($obj, $clone);
 
 $clone->prop = 30;
-br();
+\Doc\helpers\HTML::br();
 var_dump($obj, $clone);
 
 
@@ -36,10 +36,10 @@ $clone = $obj;
 
 $clone->prop->prop = 10;
 
-br();
+\Doc\helpers\HTML::br();
 var_dump($obj, $clone);
 
-br();
+\Doc\helpers\HTML::br();
 
 $obj = new CustomCloneClass;
 $obj->prop = 10;

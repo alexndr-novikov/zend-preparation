@@ -49,19 +49,19 @@ class Box implements PackableExtended, Sendable
     public function pack(string $pathWhere = '')
     {
         var_dump($pathWhere);
-        br();
+        \Doc\helpers\HTML::br();
     }
 
     public function deliverTo(Destination $destination)
     {
         var_dump($destination);
-        br();
+        \Doc\helpers\HTML::br();
     }
 
     public function sameMethod($param = '')
     {
         echo 'No conflict since PHP 5.3.9';
-        br();
+        \Doc\helpers\HTML::br();
     }
 }
 

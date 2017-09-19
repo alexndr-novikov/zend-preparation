@@ -55,13 +55,13 @@ class MethodCaller
 }
 
 $obj = new MethodCaller('test');
-br();
+\Doc\helpers\HTML::br();
 $obj->call();
 $obj->setMethod('test2');
-br();
+\Doc\helpers\HTML::br();
 $obj->call();
-br();
+\Doc\helpers\HTML::br();
 $methodName = 'callStatic';
-$obj::$methodName();br();
+$obj::$methodName();\Doc\helpers\HTML::br();
 $methodName = 'MethodCaller::callStatic'; // From php 7.0 and better
 $methodName();

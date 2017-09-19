@@ -15,7 +15,7 @@ function compare($a, $b)
         echo 'Something strange';
     }
 
-    br();
+    \Doc\helpers\HTML::br();
 }
 
 compare(1, 1);

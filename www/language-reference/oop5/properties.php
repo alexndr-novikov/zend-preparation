@@ -18,6 +18,6 @@ class ExtendedTest extends Test
 }
 
 var_dump(new Test());
-br();
-br();
+\Doc\helpers\HTML::br();
+\Doc\helpers\HTML::br();
 var_dump(new ExtendedTest());

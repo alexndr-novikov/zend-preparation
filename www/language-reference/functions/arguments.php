@@ -11,16 +11,16 @@ function byRefModify(&$arg) {
     return $arg;
 }
 echo byRefModify($a);
-br();
+\Doc\helpers\HTML::br();
 echo byRefModify($a);
-br();
+\Doc\helpers\HTML::br();
 echo byRefModify($a);
-br();
+\Doc\helpers\HTML::br();
 
 echo "<h3>Default argument values</h3>";
 
 function hasOneArgWithDefaultValue($arg = 'default') {
-    echo "Arg is {$arg}"; br();
+    echo "Arg is {$arg}"; \Doc\helpers\HTML::br();
 }
 
 hasOneArgWithDefaultValue();
@@ -28,7 +28,7 @@ hasOneArgWithDefaultValue('new set');
 
 function hasThreeArgsWithOneWithDefaultValue(int $a, int $b , $someText = 'Sum is: ')
 {
-    echo $someText . ($a+$b);br();
+    echo $someText . ($a+$b);\Doc\helpers\HTML::br();
 }
 
 hasThreeArgsWithOneWithDefaultValue(1, 2);
@@ -69,7 +69,7 @@ try {
     booleanAsSynonimTypehint(true);
 } catch (TypeError $error) {
     echo "Type error triggered - boolean as class expected";
-    br();
+    \Doc\helpers\HTML::br();
 }
 
 
@@ -104,7 +104,7 @@ try {
     floater('1.1');
 } catch (TypeError $error) {
     echo "Type error triggered - string was not converted";
-    br();
+    \Doc\helpers\HTML::br();
 }
 
 echo "<h3>Variable-length argument lists</h3>";
@@ -128,11 +128,11 @@ function checkBrutal($array) {
 
 function argsBefore55() // before 5.5
 {
-    echo "func_num_args(): " . func_num_args();br();
-    echo "count(func_get_args()): " . count(func_get_args());br();
-    echo "func_get_args(): "; print_r(func_get_args());br();
-    echo "func_get_arg(0): " . func_get_arg(0);br();
-    echo "func_get_arg(100): " . func_get_arg(100);br();
+    echo "func_num_args(): " . func_num_args();\Doc\helpers\HTML::br();
+    echo "count(func_get_args()): " . count(func_get_args());\Doc\helpers\HTML::br();
+    echo "func_get_args(): "; print_r(func_get_args());\Doc\helpers\HTML::br();
+    echo "func_get_arg(0): " . func_get_arg(0);\Doc\helpers\HTML::br();
+    echo "func_get_arg(100): " . func_get_arg(100);\Doc\helpers\HTML::br();
 }
 
 argsBefore55(1, 2, 3, 4, 5, 6, 7);
@@ -140,19 +140,19 @@ argsBefore55(1, 2, 3, 4, 5, 6, 7);
 microtime(true);
 
 $start = microtime(true);
-br();
+\Doc\helpers\HTML::br();
 for ($i=0;$i<10;$i++) {
     checkClever(...$array);
 }
 echo microtime(true) - $start;
-br();
+\Doc\helpers\HTML::br();
 
-br();
+\Doc\helpers\HTML::br();
 
 $start = microtime(true);
-br();
+\Doc\helpers\HTML::br();
 for ($i=0;$i<10;$i++) {
     checkBrutal($array);
 }
 echo microtime(true) - $start;
-br();
+\Doc\helpers\HTML::br();

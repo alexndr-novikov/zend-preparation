@@ -5,5 +5,5 @@ $i = 1;
 
 while ($i < 10) {
     echo ++$i;
-    br(); // handled even when $i became == 10 on line upper
+    \Doc\helpers\HTML::br(); // handled even when $i became == 10 on line upper
 }

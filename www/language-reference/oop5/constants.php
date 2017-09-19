@@ -7,18 +7,18 @@ class ConstantHandler
 
     static function echoConst()
     {
-        echo static::SOME;br();
+        echo static::SOME;\Doc\helpers\HTML::br();
     }
 }
 
 echo ConstantHandler::ONE;
-br();
+\Doc\helpers\HTML::br();
 $name = 'ConstantHandler';
 echo $name::TWO;
-br();
+\Doc\helpers\HTML::br();
 $obj = new ConstantHandler();
 $obj::echoConst();
-echo $obj::SOME;br();
+echo $obj::SOME;\Doc\helpers\HTML::br();
 echo SOME::class;
 
 
@@ -46,11 +46,11 @@ class ConstVisabilityExtended extends ConstVisability
 }
 
 var_dump(ConstVisability::ONE);
-br();
+\Doc\helpers\HTML::br();
 ConstVisability::dumpTwo();
-br();
+\Doc\helpers\HTML::br();
 ConstVisability::dumpThree();
-br();
+\Doc\helpers\HTML::br();
 // var_dump(ConstVisability::TWO); // error
 
 var_dump(ConstVisabilityExtended::TWO, ConstVisabilityExtended::THREE);

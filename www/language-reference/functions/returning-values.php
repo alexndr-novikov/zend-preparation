@@ -38,12 +38,12 @@ function stringFunction($a) : string
 {
     return $a;
 }
-br();
+\Doc\helpers\HTML::br();
 var_dump(stringFunction('a'));
 try {
     var_dump(stringFunction(1));
 } catch (TypeError $e) {
-    echo 'String return expected, got int'; br();
+    echo 'String return expected, got int'; \Doc\helpers\HTML::br();
 }
 
 function stringFunctionUpdated($a) : string

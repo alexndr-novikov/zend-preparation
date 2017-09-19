@@ -56,13 +56,13 @@ class ChildOne extends ParentOne
 $parent = new ParentOne();
 $parent->echoPrivate();
 
-br();
+\Doc\helpers\HTML::br();
 $child = new ChildOne();
 $child->echoPrivate(); // this triggers parent's function and it's ok
-br();
+\Doc\helpers\HTML::br();
 $child->echoParentAndOwnProtected();
 
-br();br();
+\Doc\helpers\HTML::br();\Doc\helpers\HTML::br();
 
 class ClosedButNotEnough
 {
@@ -78,7 +78,7 @@ class ClosedButNotEnough
     public function findOutSecret(self $traitor)
     {
         echo $traitor->secret();
-        br();
+        \Doc\helpers\HTML::br();
     }
 
     private function secret()
