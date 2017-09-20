@@ -22,12 +22,10 @@ services:
     links:
       - php
   mysql:
-    container_name: mysql-zend-exam
-    image: mysql:8
+    container_name: mariadb-zend-exam
+    image: mysql:5.7.19
     ports:
         - "3307:3306"
-    volumes:
-        - ./mysql:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: qwerty
         MYSQL_DATABASE: zend
@@ -39,6 +37,8 @@ services:
     ports:
       - "5432:5432"
     environment:
+      - POSTGRES_USER=user
+      - POSTGRES_DB=zend
       - DB_PASS=qwerty
     volumes:
       - ./postgresql:/var/lib/postgresql

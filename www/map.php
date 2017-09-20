@@ -109,6 +109,7 @@ return [
             new \Doc\models\DocPage('Defining namespaces', 'definition'),
             new \Doc\models\DocPage('Declaring sub-namespaces', 'nested'),
             new \Doc\models\DocPage('Defining multiple namespaces in the same file', 'definitionmultiple'),
+            new \Doc\models\DocPage('Defining multiple namespaces in the same file (2)', 'definitionmultiple_2'),
             new \Doc\models\DocPage('Using namespaces: Basics', 'basics'),
             new \Doc\models\DocPage('Namespaces and dynamic language features', 'dynamic'),
             new \Doc\models\DocPage('namespace keyword and __NAMESPACE__ constant', 'nsconstants'),
