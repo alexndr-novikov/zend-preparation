@@ -117,5 +117,9 @@ return [
             new \Doc\models\DocPage('Global space', 'global'),
             new \Doc\models\DocPage('Using namespaces: fallback to global function/constant', 'fallback'),
         ]),
+        new \Doc\models\SubCategory('Errors', 'errors', [
+            new \Doc\models\DocPage('Basics', 'basics'),
+            new \Doc\models\DocPage('Errors in PHP 7', 'php7'),
+        ]),
     ]),
 ];
