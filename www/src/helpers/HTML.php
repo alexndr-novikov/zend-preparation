@@ -1,6 +1,6 @@
 <?php
 namespace Doc\helpers;
-class HTML
+abstract class HTML
 {
     public static function br()
     {

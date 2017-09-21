@@ -116,8 +116,6 @@ return [
             new \Doc\models\DocPage('Using namespaces: Aliasing/Importing', 'importing'),
             new \Doc\models\DocPage('Global space', 'global'),
             new \Doc\models\DocPage('Using namespaces: fallback to global function/constant', 'fallback'),
-            new \Doc\models\DocPage('Name resolution rules', 'rules'),
-            new \Doc\models\DocPage('FAQ: things you need to know about namespaces', 'faq'),
         ]),
     ]),
 ];
