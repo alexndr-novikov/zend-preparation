@@ -20,14 +20,14 @@ class Response
     public function send()
     {
         if(file_exists($this->filePath)) {
-            $this->response =  $this->renderPhpFile('/var/www/src/views/layout.php', [
-                'content' => $this->renderPhpFile('/var/www/src/views/doc-page.php', [
+            $this->response =  $this->renderPhpFile(dirname(__DIR__) . '/src/views/layout.php', [
+                'content' => $this->renderPhpFile(dirname(__DIR__) . '/src/views/doc-page.php', [
                     'contentSource' => highlight_file($this->filePath, true),
                     'contentEval' => $this->renderPhpFile($this->filePath),
                 ]),
             ]);
         } else {
-            $this->response = $this->renderPhpFile('/var/www/src/views/layout.php', [
+            $this->response = $this->renderPhpFile(dirname(__DIR__) . '/src/views/layout.php', [
                 'content' => (new MenuRenderer(include dirname(__DIR__, 1) . DIRECTORY_SEPARATOR . 'map.php'))->render(),
             ]);
         }

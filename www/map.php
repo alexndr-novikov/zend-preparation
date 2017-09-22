@@ -121,5 +121,9 @@ return [
             new \Doc\models\DocPage('Basics', 'basics'),
             new \Doc\models\DocPage('Errors in PHP 7', 'php7'),
         ]),
+        new \Doc\models\SubCategory('Exceptions', 'exceptions', [
+            new \Doc\models\DocPage('Basics', 'exceptions'),
+            new \Doc\models\DocPage('Extending exceptions', 'extending'),
+        ]),
     ]),
 ];
