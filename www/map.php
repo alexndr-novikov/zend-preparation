@@ -125,5 +125,9 @@ return [
             new \Doc\models\DocPage('Basics', 'exceptions'),
             new \Doc\models\DocPage('Extending exceptions', 'extending'),
         ]),
+        new \Doc\models\SubCategory('Generators', 'generators', [
+            new \Doc\models\DocPage('Generators overview', 'overview'),
+            new \Doc\models\DocPage('Generator syntax', 'syntax'),
+        ]),
     ]),
 ];
