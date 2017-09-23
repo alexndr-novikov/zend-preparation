@@ -129,5 +129,8 @@ return [
             new \Doc\models\DocPage('Generators overview', 'overview'),
             new \Doc\models\DocPage('Generator syntax', 'syntax'),
         ]),
+        new \Doc\models\SubCategory('References Explained', 'references', [
+            new \Doc\models\DocPage('References', 'whatare.whatdo.arent.pass.return.unset.spot'),
+        ]),
     ]),
 ];

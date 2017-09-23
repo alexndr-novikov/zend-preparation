@@ -17,7 +17,7 @@
     <script src="/static/js/bootstrap.min.js"></script>
     <title>Zend exam</title>
 </head>
-<body>
+<body style="padding: 20px;">
     <?= $content; ?>
 </body>
 </html>
