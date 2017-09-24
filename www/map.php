@@ -132,5 +132,15 @@ return [
         new \Doc\models\SubCategory('References Explained', 'references', [
             new \Doc\models\DocPage('References', 'whatare.whatdo.arent.pass.return.unset.spot'),
         ]),
+        new \Doc\models\SubCategory('Predefined Exceptions', 'reserved.exceptions', [
+            new \Doc\models\DocPage('Exception', 'exception'),
+            new \Doc\models\DocPage('ErrorException', 'errorexception'),
+            new \Doc\models\DocPage('Error', 'error'),
+            new \Doc\models\DocPage('ArgumentCountError', 'argumentcounterror'),
+            new \Doc\models\DocPage('AssertionError', 'assertionerror'),
+            new \Doc\models\DocPage('DivisionByZeroError', 'divisionbyzeroerror'),
+            new \Doc\models\DocPage('ParseError', 'parseerror'),
+            new \Doc\models\DocPage('TypeError', 'typeerror'),
+        ]),
     ]),
 ];
