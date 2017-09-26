@@ -137,6 +137,7 @@ return [
             new \Doc\models\DocPage('ErrorException', 'errorexception'),
             new \Doc\models\DocPage('Error', 'error'),
             new \Doc\models\DocPage('ArgumentCountError', 'argumentcounterror'),
+            new \Doc\models\DocPage('ArithmeticError', 'arithmeticerror'),
             new \Doc\models\DocPage('AssertionError', 'assertionerror'),
             new \Doc\models\DocPage('DivisionByZeroError', 'divisionbyzeroerror'),
             new \Doc\models\DocPage('ParseError', 'parseerror'),
