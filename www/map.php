@@ -143,5 +143,16 @@ return [
             new \Doc\models\DocPage('ParseError', 'parseerror'),
             new \Doc\models\DocPage('TypeError', 'typeerror'),
         ]),
+        new \Doc\models\SubCategory('Predefined Interfaces and Classes', 'reserved.interfaces', [
+            new \Doc\models\DocPage('Traversable', 'traversable'),
+            new \Doc\models\DocPage('Iterator', 'iterator'),
+            new \Doc\models\DocPage('IteratorAggregate', 'iteratoraggregate'),
+            new \Doc\models\DocPage('Throwable', 'throwable'),
+            new \Doc\models\DocPage('ArrayAccess', 'arrayaccess'),
+            new \Doc\models\DocPage('Serializable', 'serializable'),
+            new \Doc\models\DocPage('Closure', 'closure'),
+            new \Doc\models\DocPage('Generator', 'generator'),
+        ]),
+
     ]),
 ];
