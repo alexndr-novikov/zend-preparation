@@ -154,5 +154,22 @@ return [
             new \Doc\models\DocPage('Generator', 'generator'),
         ]),
 
+        new \Doc\models\SubCategory('Predefined Variables', 'reserved.variables', [
+            new \Doc\models\DocPage('Superglobals', 'superglobals'),
+            new \Doc\models\DocPage('$GLOBALS', 'globals'),
+            new \Doc\models\DocPage('$_​SERVER', 'server'),
+            new \Doc\models\DocPage('$_​GET', 'get'),
+            new \Doc\models\DocPage('$_​POST', 'post'),
+            new \Doc\models\DocPage('$_​FILES', 'files'),
+            new \Doc\models\DocPage('$_​REQUEST', 'request'),
+            new \Doc\models\DocPage('$_​SESSION', 'session'),
+            new \Doc\models\DocPage('$_​ENV', 'environment'),
+            new \Doc\models\DocPage('$_​COOKIE', 'cookies'),
+            new \Doc\models\DocPage('$php_​errormsg', 'phperrormsg'),
+            new \Doc\models\DocPage('$HTTP_​RAW_​POST_​DATA', 'httprawpostdata'),
+            new \Doc\models\DocPage('$http_​response_​header', 'httpresponseheader'),
+            new \Doc\models\DocPage('$argc', 'argc'),
+            new \Doc\models\DocPage('$argv', 'argv'),
+        ]),
     ]),
 ];
