@@ -91,6 +91,11 @@ abstract class HTML
         echo "<br>";
     }
 
+    public static function a(string $link, string $content)
+    {
+        echo "<a href='{$link}'>{$content}</a>";
+    }
+
     public static function tag(string $tagName, string $tagValue, $printMode = true)
     {
         self::checkWhiteList($tagName);
