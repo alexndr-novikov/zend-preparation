@@ -5,13 +5,13 @@ namespace Doc\helpers;
 /**
  * Class HTML
  * @package Doc\helpers
- * @method static p($tagValue)
- * @method static h1($tagValue)
- * @method static h2($tagValue)
- * @method static h3($tagValue)
- * @method static h4($tagValue)
- * @method static h5($tagValue)
- * @method static h6($tagValue)
+ * @method static p($tagValue, $printMode = true)
+ * @method static h1($tagValue, $printMode = true)
+ * @method static h2($tagValue, $printMode = true)
+ * @method static h3($tagValue, $printMode = true)
+ * @method static h4($tagValue, $printMode = true)
+ * @method static h5($tagValue, $printMode = true)
+ * @method static h6($tagValue, $printMode = true)
  */
 abstract class HTML
 {
@@ -130,11 +130,9 @@ abstract class HTML
 
     public static function __callStatic($name, $arguments)
     {
-        list($value) = $arguments;
-
-        if(in_array($name, self::TAG_WHITE_LIST)) {
-            return self::tag($name, $value);
-        }
+        list($value, $printMode) = $arguments;
+        $printMode = is_null($printMode) ? true : (bool)$printMode;
+        return self::tag($name, $value, (bool)$printMode);
     }
 
 
