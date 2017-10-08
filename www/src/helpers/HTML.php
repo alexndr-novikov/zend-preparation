@@ -2,6 +2,17 @@
 
 namespace Doc\helpers;
 
+/**
+ * Class HTML
+ * @package Doc\helpers
+ * @method static p($tagValue)
+ * @method static h1($tagValue)
+ * @method static h2($tagValue)
+ * @method static h3($tagValue)
+ * @method static h4($tagValue)
+ * @method static h5($tagValue)
+ * @method static h6($tagValue)
+ */
 abstract class HTML
 {
 
@@ -117,13 +128,14 @@ abstract class HTML
         }
     }
 
-    public static function h3(string $tagValue)
+    public static function __callStatic($name, $arguments)
     {
-        static::tag('h3', $tagValue);
+        list($value) = $arguments;
+
+        if(in_array($name, self::TAG_WHITE_LIST)) {
+            return self::tag($name, $value);
+        }
     }
 
-    public static function h1(string $tagValue)
-    {
-        static::tag('h1', $tagValue);
-    }
+
 }
