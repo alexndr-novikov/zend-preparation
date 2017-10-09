@@ -54,7 +54,6 @@ namespace Doc\helpers;
  * @method static ol($tagValue, $printMode = true)
  * @method static option($tagValue, $printMode = true)
  * @method static param($tagValue, $printMode = true)
- * @method static pre($tagValue, $printMode = true)
  * @method static p($tagValue, $printMode = true)
  * @method static q($tagValue, $printMode = true)
  * @method static samp($tagValue, $printMode = true)
@@ -170,7 +169,7 @@ abstract class HTML
      */
     public static function br($printMode = true)
     {
-        return self::handlePrint('br', $printMode);
+        return self::handlePrint('<br>', $printMode);
     }
 
     /**
@@ -240,6 +239,11 @@ abstract class HTML
         }
 
         return $value;
+    }
+
+    public static function pre(array $tagValue, $printMode = true)
+    {
+        return self::tag('pre', print_r($tagValue, true), $printMode);
     }
 
 
