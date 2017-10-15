@@ -186,6 +186,8 @@ return [
     new \Doc\models\RootCategory('Functions', 'functions', [
         new \Doc\models\SubCategory('Array', 'array', [
             new \Doc\models\DocPage('array_change_key_case()', 'array-change-key-case'),
+            new \Doc\models\DocPage('array_chunk()', 'array_chunk'),
+            new \Doc\models\DocPage('array_column()', 'array_column'),
         ]),
     ]),
 ];
