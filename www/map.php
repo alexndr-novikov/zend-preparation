@@ -183,4 +183,9 @@ return [
             new \Doc\models\DocPage('Zip context options', 'zip'),
         ]),
     ]),
+    new \Doc\models\RootCategory('Functions', 'functions', [
+        new \Doc\models\SubCategory('Array', 'array', [
+            new \Doc\models\DocPage('array_change_key_case()', 'array-change-key-case'),
+        ]),
+    ]),
 ];
