@@ -188,6 +188,7 @@ return [
             new \Doc\models\DocPage('array_change_key_case()', 'array-change-key-case'),
             new \Doc\models\DocPage('array_chunk()', 'array_chunk'),
             new \Doc\models\DocPage('array_column()', 'array_column'),
+            new \Doc\models\DocPage('array_combine()', 'array_combine'),
         ]),
     ]),
 ];
