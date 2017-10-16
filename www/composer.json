@@ -2,7 +2,8 @@
     "name": "aleksandrnovikov/www",
     "require": {
         "symfony/var-dumper": "^3.3",
-        "symfony/http-foundation": "*"
+        "symfony/http-foundation": "*",
+        "fzaninotto/faker": "^1.7"
     },
     "authors": [
         {
