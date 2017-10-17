@@ -189,6 +189,7 @@ return [
             new \Doc\models\DocPage('array_chunk()', 'array_chunk'),
             new \Doc\models\DocPage('array_column()', 'array_column'),
             new \Doc\models\DocPage('array_combine()', 'array_combine'),
+            new \Doc\models\DocPage('array_count_values()', 'array_count_values'),
         ]),
     ]),
 ];
