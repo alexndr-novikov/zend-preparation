@@ -1,6 +1,7 @@
 <?php use \Doc\helpers\HTML;
 
 HTML::h1('array_diff_key()');
+HTML::p('Key only, ignore value');
 
 
 HTML::pre(array_diff_key([0, 1, 2, 3], [100, 100, 100, 100])); // empty array

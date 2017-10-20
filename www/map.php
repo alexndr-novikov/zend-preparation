@@ -194,7 +194,7 @@ return [
             new \Doc\models\DocPage('array_diff_key()', 'array_diff_key'),
             new \Doc\models\DocPage('array_​diff_​uassoc()', 'array_​diff_​uassoc'),
             new \Doc\models\DocPage('array_​diff_​ukey()', 'array_​diff_​ukey'),
-            new \Doc\models\DocPage('array_​diff()', 'array_​diff'),
+            new \Doc\models\DocPage('array_​diff()', 'array_diff'),
         ]),
     ]),
 ];
