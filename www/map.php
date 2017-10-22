@@ -195,6 +195,10 @@ return [
             new \Doc\models\DocPage('array_​diff_​uassoc()', 'array_diff_uassoc'),
             new \Doc\models\DocPage('array_​diff_​ukey()', 'array_diff_ukey'),
             new \Doc\models\DocPage('array_​diff()', 'array_diff'),
+            new \Doc\models\DocPage('array_fill_keys()', 'array_fill_keys'),
+            new \Doc\models\DocPage('array_fill()', 'array_fill'),
+            new \Doc\models\DocPage('array_filter()', 'array_filter'),
+            new \Doc\models\DocPage('array_flip()', 'array_flip'),
         ]),
     ]),
 ];
