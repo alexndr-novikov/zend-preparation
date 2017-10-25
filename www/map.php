@@ -200,6 +200,7 @@ return [
             new \Doc\models\DocPage('array_filter()', 'array_filter'),
             new \Doc\models\DocPage('array_flip()', 'array_flip'),
             new \Doc\models\DocPage('array_keys()', 'array_keys'),
+            new \Doc\models\DocPage('array_key_exists()', 'array_key_exists'),
         ]),
     ]),
 ];
