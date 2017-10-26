@@ -6,7 +6,7 @@ HTML::h1('array_keys()');
 
 $array = range(10, 20, 2);
 
-HTML::pre(array_keys($array));
+HTML::pre(array_keys($array)); // all keys
 
 $array = [10 => 1 , 0, true, false, null, new ObjectHandler, '', 'qwerty'];
 

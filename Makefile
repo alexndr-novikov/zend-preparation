@@ -1,8 +1,8 @@
 up:
 	docker-compose up -d
-down:
+d:
 	docker-compose down
-stop:
+s:
 	docker-compose stop
 php:
 	docker exec -it php-zend-exam bash
