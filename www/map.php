@@ -202,6 +202,7 @@ return [
             new \Doc\models\DocPage('array_keys()', 'array_keys'),
             new \Doc\models\DocPage('array_key_exists()', 'array_key_exists'),
             new \Doc\models\DocPage('array_pad()', 'array_pad'),
+            new \Doc\models\DocPage('array_pop()', 'array_pop'),
         ]),
     ]),
 ];
