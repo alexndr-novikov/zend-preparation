@@ -205,6 +205,7 @@ return [
             new \Doc\models\DocPage('array_pop()', 'array_pop'),
             new \Doc\models\DocPage('array_product()', 'array_product'),
             new \Doc\models\DocPage('array_push()', 'array_push'),
+            new \Doc\models\DocPage('array_rand()', 'array_rand'),
         ]),
     ]),
 ];
