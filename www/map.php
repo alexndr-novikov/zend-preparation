@@ -207,6 +207,7 @@ return [
             new \Doc\models\DocPage('array_push()', 'array_push'),
             new \Doc\models\DocPage('array_rand()', 'array_rand'),
             new \Doc\models\DocPage('array_reverse()', 'array_reverse'),
+            new \Doc\models\DocPage('array_search()', 'array_search'),
         ]),
     ]),
 ];
