@@ -209,6 +209,7 @@ return [
             new \Doc\models\DocPage('array_reverse()', 'array_reverse'),
             new \Doc\models\DocPage('array_search()', 'array_search'),
             new \Doc\models\DocPage('array_shift()', 'array_shift'),
+            new \Doc\models\DocPage('array_slice()', 'array_slice'),
         ]),
     ]),
 ];
