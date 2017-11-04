@@ -210,6 +210,8 @@ return [
             new \Doc\models\DocPage('array_search()', 'array_search'),
             new \Doc\models\DocPage('array_shift()', 'array_shift'),
             new \Doc\models\DocPage('array_slice()', 'array_slice'),
+            new \Doc\models\DocPage('array_splice()', 'array_splice'),
+            new \Doc\models\DocPage('array_sum()', 'array_sum'),
         ]),
     ]),
 ];
