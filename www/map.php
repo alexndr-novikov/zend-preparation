@@ -230,7 +230,7 @@ return [
 //            new \Doc\models\DocPage('array_uintersect_assoc()', 'array_uintersect_assoc'),
 //            new \Doc\models\DocPage('array_uintersect_uassoc()', 'array_uintersect_uassoc'),
 //            new \Doc\models\DocPage('array_uintersect()', 'array_uintersect'),
-//            new \Doc\models\DocPage('array_unique()', 'array_unique'),
+            new \Doc\models\DocPage('array_unique()', 'array_unique'),
             new \Doc\models\DocPage('array_unshift()', 'array_unshift'),
 //            new \Doc\models\DocPage('array_values()', 'array_values'),
 //            new \Doc\models\DocPage('array_walk_recursive()', 'array_walk_recursive'),
