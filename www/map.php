@@ -258,7 +258,7 @@ return [
 //            new \Doc\models\DocPage('range()', 'range'),
 //            new \Doc\models\DocPage('reset()', 'reset'),
 //            new \Doc\models\DocPage('rsort()', 'rsort'),
-//            new \Doc\models\DocPage('shuffle()', 'shuffle'),
+            new \Doc\models\DocPage('shuffle()', 'shuffle'),
 //            new \Doc\models\DocPage('sizeof()', 'sizeof'),
 //            new \Doc\models\DocPage('sort()', 'sort'),
 //            new \Doc\models\DocPage('uasort()', 'uasort'),
