@@ -238,7 +238,7 @@ return [
             new \Doc\models\DocPage('array()', 'array'),
             new \Doc\models\DocPage('arsort()', 'arsort'),
             new \Doc\models\DocPage('asort()', 'asort'),
-//            new \Doc\models\DocPage('compact()', 'compact'),
+            new \Doc\models\DocPage('compact()', 'compact'),
             new \Doc\models\DocPage('count()', 'count'),
 //            new \Doc\models\DocPage('current()', 'current'),
 //            new \Doc\models\DocPage('each()', 'each'),
