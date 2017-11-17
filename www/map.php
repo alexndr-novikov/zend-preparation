@@ -240,7 +240,7 @@ return [
             new \Doc\models\DocPage('asort()', 'asort'),
             new \Doc\models\DocPage('compact()', 'compact'),
             new \Doc\models\DocPage('count()', 'count'),
-//            new \Doc\models\DocPage('current()', 'current'),
+            new \Doc\models\DocPage('current()', 'current'),
 //            new \Doc\models\DocPage('each()', 'each'),
 //            new \Doc\models\DocPage('end()', 'end'),
 //            new \Doc\models\DocPage('extract()', 'extract'),
