@@ -246,7 +246,7 @@ return [
 //            new \Doc\models\DocPage('extract()', 'extract'),
             new \Doc\models\DocPage('in_array()', 'in_array'),
             new \Doc\models\DocPage('key_exists()', 'key_exists'),
-//            new \Doc\models\DocPage('key()', 'key'),
+            new \Doc\models\DocPage('key()', 'key'),
 //            new \Doc\models\DocPage('krsort()', 'krsort'),
 //            new \Doc\models\DocPage('ksort()', 'ksort'),
 //            new \Doc\models\DocPage('list()', 'list'),
