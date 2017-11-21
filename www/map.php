@@ -253,7 +253,7 @@ return [
 //            new \Doc\models\DocPage('natcasesort()', 'natcasesort'),
 //            new \Doc\models\DocPage('natsort()', 'natsort'),
             new \Doc\models\DocPage('next()', 'next'),
-//            new \Doc\models\DocPage('pos()', 'pos'),
+            new \Doc\models\DocPage('pos()', 'pos'),
             new \Doc\models\DocPage('prev()', 'prev'),
             new \Doc\models\DocPage('range()', 'range'),
             new \Doc\models\DocPage('reset()', 'reset'),
