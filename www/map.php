@@ -208,7 +208,7 @@ return [
             new \Doc\models\DocPage('array_keys()', 'array_keys'),
 //            new \Doc\models\DocPage('array_map()', 'array_map'),
 //            new \Doc\models\DocPage('array_merge_recursive()', 'array_merge_recursive'),
-//            new \Doc\models\DocPage('array_merge()', 'array_merge'),
+            new \Doc\models\DocPage('array_merge()', 'array_merge'),
 //            new \Doc\models\DocPage('array_multisort()', 'array_multisort'),
             new \Doc\models\DocPage('array_pad()', 'array_pad'),
             new \Doc\models\DocPage('array_pop()', 'array_pop'),
