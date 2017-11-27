@@ -203,7 +203,7 @@ return [
 //            new \Doc\models\DocPage('array_intersect_key()', 'array_intersect_key'),
 //            new \Doc\models\DocPage('array_intersect_uassoc()', 'array_intersect_uassoc'),
 //            new \Doc\models\DocPage('array_intersect_ukey()', 'array_intersect_ukey'),
-//            new \Doc\models\DocPage('array_intersect()', 'array_intersect'),
+            new \Doc\models\DocPage('array_intersect()', 'array_intersect'),
             new \Doc\models\DocPage('array_key_exists()', 'array_key_exists'),
             new \Doc\models\DocPage('array_keys()', 'array_keys'),
 //            new \Doc\models\DocPage('array_map()', 'array_map'),
