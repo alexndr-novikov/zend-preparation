@@ -200,7 +200,7 @@ return [
             new \Doc\models\DocPage('array_filter()', 'array_filter'),
             new \Doc\models\DocPage('array_flip()', 'array_flip'),
 //            new \Doc\models\DocPage('array_intersect_assoc()', 'array_intersect_assoc'),
-//            new \Doc\models\DocPage('array_intersect_key()', 'array_intersect_key'),
+            new \Doc\models\DocPage('array_intersect_key()', 'array_intersect_key'),
 //            new \Doc\models\DocPage('array_intersect_uassoc()', 'array_intersect_uassoc'),
 //            new \Doc\models\DocPage('array_intersect_ukey()', 'array_intersect_ukey'),
             new \Doc\models\DocPage('array_intersect()', 'array_intersect'),
