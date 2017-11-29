@@ -215,7 +215,7 @@ return [
             new \Doc\models\DocPage('array_product()', 'array_product'),
             new \Doc\models\DocPage('array_push()', 'array_push'),
             new \Doc\models\DocPage('array_rand()', 'array_rand'),
-//            new \Doc\models\DocPage('array_reduce()', 'array_reduce'),
+            new \Doc\models\DocPage('array_reduce()', 'array_reduce'),
 //            new \Doc\models\DocPage('array_replace_recursive()', 'array_replace_recursive'),
             new \Doc\models\DocPage('array_replace()', 'array_replace'),
             new \Doc\models\DocPage('array_reverse()', 'array_reverse'),
