@@ -249,7 +249,7 @@ return [
             new \Doc\models\DocPage('key()', 'key'),
 //            new \Doc\models\DocPage('krsort()', 'krsort'),
 //            new \Doc\models\DocPage('ksort()', 'ksort'),
-//            new \Doc\models\DocPage('list()', 'list'),
+            new \Doc\models\DocPage('list()', 'list'),
 //            new \Doc\models\DocPage('natcasesort()', 'natcasesort'),
 //            new \Doc\models\DocPage('natsort()', 'natsort'),
             new \Doc\models\DocPage('next()', 'next'),
