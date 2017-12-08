@@ -226,7 +226,7 @@ return [
             new \Doc\models\DocPage('array_sum()', 'array_sum'),
 //            new \Doc\models\DocPage('array_udiff_assoc()', 'array_udiff_assoc'),
 //            new \Doc\models\DocPage('array_udiff_uassoc()', 'array_udiff_uassoc'),
-//            new \Doc\models\DocPage('array_udiff()', 'array_udiff'),
+            new \Doc\models\DocPage('array_udiff()', 'array_udiff'),
 //            new \Doc\models\DocPage('array_uintersect_assoc()', 'array_uintersect_assoc'),
 //            new \Doc\models\DocPage('array_uintersect_uassoc()', 'array_uintersect_uassoc'),
 //            new \Doc\models\DocPage('array_uintersect()', 'array_uintersect'),
