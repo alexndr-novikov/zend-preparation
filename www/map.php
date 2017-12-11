@@ -267,9 +267,10 @@ return [
         ]),
         new \Doc\models\SubCategory('Class/Object Information', 'classobj', [
             new \Doc\models\DocPage('__autoload', '__autoload.php'),
-            new \Doc\models\DocPage('call_user_method_array', 'call_user_method_array()'),
-            new \Doc\models\DocPage('call_user_method', 'call_user_method()'),
-            new \Doc\models\DocPage('class_alias', 'class_alias()'),
+            new \Doc\models\DocPage('call_user_method_array', 'call_user_method_array'),
+            new \Doc\models\DocPage('call_user_method', 'call_user_method'),
+            new \Doc\models\DocPage('class_alias', 'class_alias'),
+            new \Doc\models\DocPage('class_exists', 'class_exists'),
         ]),
     ]),
 ];
