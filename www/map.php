@@ -271,6 +271,7 @@ return [
             new \Doc\models\DocPage('call_user_method', 'call_user_method'),
             new \Doc\models\DocPage('class_alias', 'class_alias'),
             new \Doc\models\DocPage('class_exists', 'class_exists'),
+            new \Doc\models\DocPage('get_called_class', 'get_called_class'),
         ]),
     ]),
 ];
