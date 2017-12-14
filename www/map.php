@@ -273,6 +273,7 @@ return [
             new \Doc\models\DocPage('class_exists', 'class_exists'),
             new \Doc\models\DocPage('get_called_class', 'get_called_class'),
             new \Doc\models\DocPage('get_class_methods', 'get_class_methods'),
+            new \Doc\models\DocPage('get_class_vars', 'get_class_vars'),
         ]),
     ]),
 ];
