@@ -279,6 +279,7 @@ return [
             new \Doc\models\DocPage('get_declared_interfaces', 'get_declared_interfaces'),
             new \Doc\models\DocPage('get_declared_traits', 'get_declared_traits'),
             new \Doc\models\DocPage('get_object_vars', 'get_object_vars'),
+            new \Doc\models\DocPage('get_parent_class', 'get_parent_class'),
         ]),
     ]),
 ];
