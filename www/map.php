@@ -281,6 +281,7 @@ return [
             new \Doc\models\DocPage('get_object_vars', 'get_object_vars'),
             new \Doc\models\DocPage('get_parent_class', 'get_parent_class'),
             new \Doc\models\DocPage('interface_exists', 'interface_exists'),
+            new \Doc\models\DocPage('is_a', 'is_a'),
         ]),
     ]),
 ];
