@@ -282,6 +282,7 @@ return [
             new \Doc\models\DocPage('get_parent_class', 'get_parent_class'),
             new \Doc\models\DocPage('interface_exists', 'interface_exists'),
             new \Doc\models\DocPage('is_a', 'is_a'),
+            new \Doc\models\DocPage('is_subclass_of', 'is_subclass_of'),
         ]),
     ]),
 ];
