@@ -284,6 +284,8 @@ return [
             new \Doc\models\DocPage('is_a', 'is_a'),
             new \Doc\models\DocPage('is_subclass_of', 'is_subclass_of'),
             new \Doc\models\DocPage('method_exists', 'method_exists'),
+            new \Doc\models\DocPage('property_exists', 'property_exists'),
+            new \Doc\models\DocPage('trait_exists', 'trait_exists'),
         ]),
     ]),
 ];
