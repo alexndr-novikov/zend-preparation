@@ -287,5 +287,10 @@ return [
             new \Doc\models\DocPage('property_exists', 'property_exists'),
             new \Doc\models\DocPage('trait_exists', 'trait_exists'),
         ]),
+        new \Doc\models\SubCategory('Variable handling', 'var', [
+            new \Doc\models\DocPage('boolval', 'boolval'),
+            new \Doc\models\DocPage('doubleval', 'doubleval'),
+            new \Doc\models\DocPage('floatval', 'floatval'),
+        ]),
     ]),
 ];
