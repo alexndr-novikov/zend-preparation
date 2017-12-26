@@ -291,6 +291,7 @@ return [
             new \Doc\models\DocPage('boolval', 'boolval'),
             new \Doc\models\DocPage('doubleval', 'doubleval'),
             new \Doc\models\DocPage('floatval', 'floatval'),
+            new \Doc\models\DocPage('is_bool', 'is_bool'),
         ]),
     ]),
 ];
