@@ -291,6 +291,7 @@ return [
             new \Doc\models\DocPage('boolval', 'boolval'),
             new \Doc\models\DocPage('doubleval', 'doubleval'),
             new \Doc\models\DocPage('floatval', 'floatval'),
+            new \Doc\models\DocPage('get_defined_vars', 'get_defined_vars'),
             new \Doc\models\DocPage('is_array', 'is_array'),
             new \Doc\models\DocPage('is_bool', 'is_bool'),
             new \Doc\models\DocPage('is_callable', 'is_callable'),
