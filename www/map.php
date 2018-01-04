@@ -290,6 +290,7 @@ return [
         new \Doc\models\SubCategory('Variable handling', 'var', [
             new \Doc\models\DocPage('boolval', 'boolval'),
             new \Doc\models\DocPage('doubleval', 'doubleval'),
+            new \Doc\models\DocPage('empty', 'empty'),
             new \Doc\models\DocPage('floatval', 'floatval'),
             new \Doc\models\DocPage('get_defined_vars', 'get_defined_vars'),
             new \Doc\models\DocPage('get_resource_type', 'get_resource_type'),
