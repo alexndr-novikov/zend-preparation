@@ -294,6 +294,7 @@ return [
             new \Doc\models\DocPage('floatval', 'floatval'),
             new \Doc\models\DocPage('get_defined_vars', 'get_defined_vars'),
             new \Doc\models\DocPage('get_resource_type', 'get_resource_type'),
+            new \Doc\models\DocPage('gettype', 'gettype'),
             new \Doc\models\DocPage('intval', 'intval'),
             new \Doc\models\DocPage('is_array', 'is_array'),
             new \Doc\models\DocPage('is_bool', 'is_bool'),
