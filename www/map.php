@@ -315,6 +315,7 @@ return [
             new \Doc\models\DocPage('print_r', 'print_r'),
             new \Doc\models\DocPage('settype', 'settype'),
             new \Doc\models\DocPage('strval', 'strval'),
+            new \Doc\models\DocPage('unset', 'unset'),
             new \Doc\models\DocPage('var_dump', 'var_dump'),
         ]),
     ]),
