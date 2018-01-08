@@ -289,6 +289,7 @@ return [
         ]),
         new \Doc\models\SubCategory('Variable handling', 'var', [
             new \Doc\models\DocPage('boolval', 'boolval'),
+            new \Doc\models\DocPage('debug_zval_dump', 'debug_zval_dump'),
             new \Doc\models\DocPage('doubleval', 'doubleval'),
             new \Doc\models\DocPage('empty', 'empty'),
             new \Doc\models\DocPage('floatval', 'floatval'),
