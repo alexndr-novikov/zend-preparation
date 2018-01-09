@@ -317,6 +317,7 @@ return [
             new \Doc\models\DocPage('strval', 'strval'),
             new \Doc\models\DocPage('unset', 'unset'),
             new \Doc\models\DocPage('var_dump', 'var_dump'),
+            new \Doc\models\DocPage('var_export', 'var_export'),
         ]),
     ]),
 ];
