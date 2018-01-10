@@ -313,6 +313,7 @@ return [
             new \Doc\models\DocPage('is_real', 'is_real'),
             new \Doc\models\DocPage('is_resource', 'is_resource'),
             new \Doc\models\DocPage('is_scalar', 'is_scalar'),
+            new \Doc\models\DocPage('isset', 'isset'),
             new \Doc\models\DocPage('print_r', 'print_r'),
             new \Doc\models\DocPage('settype', 'settype'),
             new \Doc\models\DocPage('strval', 'strval'),
