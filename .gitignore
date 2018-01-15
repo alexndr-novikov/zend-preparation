@@ -3,3 +3,4 @@ logs
 mysql
 postgresql
 www/vendor
+www/functions/classobj/__autoload.php.php

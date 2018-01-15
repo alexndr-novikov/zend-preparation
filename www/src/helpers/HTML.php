@@ -246,5 +246,11 @@ abstract class HTML
         return self::tag('pre', print_r($tagValue, true), $printMode);
     }
 
+    public static function dump($value) : void
+    {
+        var_dump($value);
+        HTML::br();
+    }
+
 
 }
