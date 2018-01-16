@@ -329,6 +329,7 @@ return [
             new \Doc\models\DocPage('join', 'join'),
             new \Doc\models\DocPage('strlen', 'strlen'),
             new \Doc\models\DocPage('strrev', 'strrev'),
+            new \Doc\models\DocPage('str_pad', 'str_pad'),
         ]),
     ]),
 ];
