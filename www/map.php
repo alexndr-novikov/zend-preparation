@@ -333,6 +333,7 @@ return [
             new \Doc\models\DocPage('trim', 'trim'),
             new \Doc\models\DocPage('rtrim', 'rtrim'),
             new \Doc\models\DocPage('ltrim', 'ltrim'),
+            new \Doc\models\DocPage('str_repeat', 'str_repeat'),
         ]),
     ]),
 ];
