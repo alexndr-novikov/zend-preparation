@@ -327,6 +327,7 @@ return [
         new \Doc\models\SubCategory('Strings', 'strings', [
             new \Doc\models\DocPage('implode', 'implode'),
             new \Doc\models\DocPage('join', 'join'),
+            new \Doc\models\DocPage('md5', 'md5'),
             new \Doc\models\DocPage('strlen', 'strlen'),
             new \Doc\models\DocPage('strrev', 'strrev'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
