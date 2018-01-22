@@ -336,6 +336,7 @@ return [
             new \Doc\models\DocPage('rtrim', 'rtrim'),
             new \Doc\models\DocPage('ltrim', 'ltrim'),
             new \Doc\models\DocPage('str_repeat', 'str_repeat'),
+            new \Doc\models\DocPage('ucfirst', 'ucfirst'),
         ]),
     ]),
 ];
