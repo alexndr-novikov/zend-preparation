@@ -1,14 +1,14 @@
 <?php use \Doc\helpers\HTML;
-HTML::h1('ucfirst');
+HTML::h1('lcfirst');
 
 
-$string = 'Lorem ipsum dolor sit ämet'; // ä is not capitalised for default locale
+$string = 'Lorem Ipsum Dolor Sit Āmet'; // ä is not lowercased for default locale
 
-function capitaliseString(string $string)
+function lowercaseStringFirst(string $string)
 {
     $string = explode(' ', $string);
     foreach ($string as &$value) {
-        $value = ucfirst($value);
+        $value = lcfirst($value);
     }
     return implode(' ', $string);
 }
