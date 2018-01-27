@@ -333,6 +333,7 @@ return [
             new \Doc\models\DocPage('md5_file', 'md5_file'),
             new \Doc\models\DocPage('nl_langinfo', 'nl_langinfo'),
             new \Doc\models\DocPage('sha1', 'sha1'),
+            new \Doc\models\DocPage('sha1_file', 'sha1_file'),
             new \Doc\models\DocPage('strlen', 'strlen'),
             new \Doc\models\DocPage('strrev', 'strrev'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
