@@ -325,6 +325,7 @@ return [
             new \Doc\models\DocPage('var_export', 'var_export'),
         ]),
         new \Doc\models\SubCategory('Strings', 'strings', [
+            new \Doc\models\DocPage('addslashes', 'addslashes'),
             new \Doc\models\DocPage('chop', 'chop'),
             new \Doc\models\DocPage('implode', 'implode'),
             new \Doc\models\DocPage('join', 'join'),
