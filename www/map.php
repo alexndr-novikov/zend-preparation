@@ -328,6 +328,7 @@ return [
             new \Doc\models\DocPage('addslashes', 'addslashes'),
             new \Doc\models\DocPage('chop', 'chop'),
             new \Doc\models\DocPage('chr', 'chr'),
+            new \Doc\models\DocPage('echo', 'echo'),
             new \Doc\models\DocPage('implode', 'implode'),
             new \Doc\models\DocPage('join', 'join'),
             new \Doc\models\DocPage('lcfirst', 'lcfirst'),
