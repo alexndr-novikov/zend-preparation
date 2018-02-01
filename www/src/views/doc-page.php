@@ -14,7 +14,7 @@
     </thead>
     <tbody>
     <tr>
-        <td><?= $contentSource; ?></td>
+        <td style="max-width: 800px; overflow:hidden;"><?= $contentSource; ?></td>
         <td><?= $contentEval; ?></td>
     </tr>
     </tbody>
