@@ -341,6 +341,7 @@ return [
             new \Doc\models\DocPage('ord', 'ord'),
             new \Doc\models\DocPage('sha1', 'sha1'),
             new \Doc\models\DocPage('sha1_file', 'sha1_file'),
+            new \Doc\models\DocPage('strpbrk', 'strpbrk'),
             new \Doc\models\DocPage('strlen', 'strlen'),
             new \Doc\models\DocPage('strrev', 'strrev'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
