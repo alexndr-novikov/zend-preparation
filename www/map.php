@@ -351,6 +351,7 @@ return [
             new \Doc\models\DocPage('soundex', 'soundex'),
             new \Doc\models\DocPage('str_repeat', 'str_repeat'),
             new \Doc\models\DocPage('ucfirst', 'ucfirst'),
+            new \Doc\models\DocPage('ucwords', 'ucwords'),
         ]),
     ]),
 ];
