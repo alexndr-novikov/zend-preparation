@@ -349,6 +349,7 @@ return [
             new \Doc\models\DocPage('rtrim', 'rtrim'),
             new \Doc\models\DocPage('ltrim', 'ltrim'),
             new \Doc\models\DocPage('soundex', 'soundex'),
+            new \Doc\models\DocPage('sprintf', 'sprintf'),
             new \Doc\models\DocPage('str_repeat', 'str_repeat'),
             new \Doc\models\DocPage('ucfirst', 'ucfirst'),
             new \Doc\models\DocPage('ucwords', 'ucwords'),
