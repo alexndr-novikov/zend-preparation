@@ -344,6 +344,7 @@ return [
             new \Doc\models\DocPage('strpbrk', 'strpbrk'),
             new \Doc\models\DocPage('strlen', 'strlen'),
             new \Doc\models\DocPage('strrev', 'strrev'),
+            new \Doc\models\DocPage('str_shuffle', 'str_shuffle'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
             new \Doc\models\DocPage('trim', 'trim'),
             new \Doc\models\DocPage('rtrim', 'rtrim'),
