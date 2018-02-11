@@ -326,6 +326,7 @@ return [
         ]),
         new \Doc\models\SubCategory('Strings', 'strings', [
             new \Doc\models\DocPage('addslashes', 'addslashes'),
+            new \Doc\models\DocPage('bin2hex', 'bin2hex'),
             new \Doc\models\DocPage('chop', 'chop'),
             new \Doc\models\DocPage('chr', 'chr'),
             new \Doc\models\DocPage('count_chars', 'count_chars'),
