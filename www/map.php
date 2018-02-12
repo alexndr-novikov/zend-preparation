@@ -329,6 +329,7 @@ return [
             new \Doc\models\DocPage('bin2hex', 'bin2hex'),
             new \Doc\models\DocPage('chop', 'chop'),
             new \Doc\models\DocPage('chr', 'chr'),
+            new \Doc\models\DocPage('convert_uuencode', 'convert_uuencode'),
             new \Doc\models\DocPage('count_chars', 'count_chars'),
             new \Doc\models\DocPage('crc32', 'crc32'),
             new \Doc\models\DocPage('echo', 'echo'),
