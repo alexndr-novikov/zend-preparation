@@ -335,6 +335,7 @@ return [
             new \Doc\models\DocPage('count_chars', 'count_chars'),
             new \Doc\models\DocPage('crc32', 'crc32'),
             new \Doc\models\DocPage('echo', 'echo'),
+            new \Doc\models\DocPage('explode', 'explode'),
             new \Doc\models\DocPage('implode', 'implode'),
             new \Doc\models\DocPage('hex2bin', 'hex2bin'),
             new \Doc\models\DocPage('join', 'join'),
