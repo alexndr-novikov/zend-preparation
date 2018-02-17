@@ -353,6 +353,7 @@ return [
             new \Doc\models\DocPage('strrev', 'strrev'),
             new \Doc\models\DocPage('str_shuffle', 'str_shuffle'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
+            new \Doc\models\DocPage('substr_count', 'substr_count'),
             new \Doc\models\DocPage('trim', 'trim'),
             new \Doc\models\DocPage('rtrim', 'rtrim'),
             new \Doc\models\DocPage('ltrim', 'ltrim'),
