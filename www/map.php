@@ -368,6 +368,7 @@ return [
             new \Doc\models\DocPage('str_repeat', 'str_repeat'),
             new \Doc\models\DocPage('ucfirst', 'ucfirst'),
             new \Doc\models\DocPage('ucwords', 'ucwords'),
+            new \Doc\models\DocPage('vfprintf', 'vfprintf'),
             new \Doc\models\DocPage('vprintf', 'vprintf'),
             new \Doc\models\DocPage('vsprintf', 'vsprintf'),
         ]),
