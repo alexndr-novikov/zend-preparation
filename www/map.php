@@ -331,6 +331,7 @@ return [
             new \Doc\models\DocPage('chop', 'chop'),
             new \Doc\models\DocPage('chr', 'chr'),
             new \Doc\models\DocPage('chunk_split', 'chunk_split'),
+            new \Doc\models\DocPage('convert_cyr_string', 'convert_cyr_string'),
             new \Doc\models\DocPage('convert_uudecode', 'convert_uudecode'),
             new \Doc\models\DocPage('convert_uuencode', 'convert_uuencode'),
             new \Doc\models\DocPage('count_chars', 'count_chars'),
