@@ -4,3 +4,5 @@ mysql
 postgresql
 www/vendor
 www/functions/classobj/__autoload.php.php
+www/vfprintf.txt
+www/fprintf.txt
