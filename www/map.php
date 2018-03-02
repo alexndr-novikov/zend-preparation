@@ -340,6 +340,7 @@ return [
             new \Doc\models\DocPage('explode', 'explode'),
             new \Doc\models\DocPage('fprintf', 'fprintf'),
             new \Doc\models\DocPage('hebrev', 'hebrev'),
+            new \Doc\models\DocPage('hebrevc', 'hebrevc'),
             new \Doc\models\DocPage('implode', 'implode'),
             new \Doc\models\DocPage('hex2bin', 'hex2bin'),
             new \Doc\models\DocPage('join', 'join'),
