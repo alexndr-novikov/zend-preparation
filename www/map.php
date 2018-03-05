@@ -344,6 +344,7 @@ return [
             new \Doc\models\DocPage('implode', 'implode'),
             new \Doc\models\DocPage('hex2bin', 'hex2bin'),
             new \Doc\models\DocPage('html_entity_decode', 'html_entity_decode'),
+            new \Doc\models\DocPage('htmlentities', 'htmlentities'),
             new \Doc\models\DocPage('join', 'join'),
             new \Doc\models\DocPage('lcfirst', 'lcfirst'),
             new \Doc\models\DocPage('levenshtein', 'levenshtein'),
