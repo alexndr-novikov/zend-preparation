@@ -346,6 +346,7 @@ return [
             new \Doc\models\DocPage('html_entity_decode', 'html_entity_decode'),
             new \Doc\models\DocPage('htmlentities', 'htmlentities'),
             new \Doc\models\DocPage('htmlspecialchars', 'htmlspecialchars'),
+            new \Doc\models\DocPage('htmlspecialchars_decode', 'htmlspecialchars_decode'),
             new \Doc\models\DocPage('join', 'join'),
             new \Doc\models\DocPage('lcfirst', 'lcfirst'),
             new \Doc\models\DocPage('levenshtein', 'levenshtein'),
