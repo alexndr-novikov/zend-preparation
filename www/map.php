@@ -355,6 +355,7 @@ return [
             new \Doc\models\DocPage('md5_file', 'md5_file'),
             new \Doc\models\DocPage('md5', 'md5'),
             new \Doc\models\DocPage('metaphone', 'metaphone'),
+            new \Doc\models\DocPage('money_format', 'money_format'),
             new \Doc\models\DocPage('nl_langinfo', 'nl_langinfo'),
             new \Doc\models\DocPage('nl2br', 'nl2br'),
             new \Doc\models\DocPage('ord', 'ord'),
