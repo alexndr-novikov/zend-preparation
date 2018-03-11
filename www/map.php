@@ -358,6 +358,7 @@ return [
             new \Doc\models\DocPage('money_format', 'money_format'),
             new \Doc\models\DocPage('nl_langinfo', 'nl_langinfo'),
             new \Doc\models\DocPage('nl2br', 'nl2br'),
+            new \Doc\models\DocPage('number_format', 'number_format'),
             new \Doc\models\DocPage('ord', 'ord'),
             new \Doc\models\DocPage('parse_str', 'parse_str'),
             new \Doc\models\DocPage('sha1', 'sha1'),
