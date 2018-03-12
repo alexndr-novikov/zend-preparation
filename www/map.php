@@ -376,6 +376,7 @@ return [
             new \Doc\models\DocPage('substr_count', 'substr_count'),
             new \Doc\models\DocPage('trim', 'trim'),
             new \Doc\models\DocPage('rtrim', 'rtrim'),
+            new \Doc\models\DocPage('print', 'print'),
             new \Doc\models\DocPage('printf', 'printf'),
             new \Doc\models\DocPage('soundex', 'soundex'),
             new \Doc\models\DocPage('sprintf', 'sprintf'),
