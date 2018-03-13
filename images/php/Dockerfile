@@ -1,4 +1,4 @@
-FROM php:7.1.9-fpm
+FROM php:7.1.15-fpm-jessie
 
 RUN  apt-get update && apt-get install -y \
         curl \
