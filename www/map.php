@@ -379,6 +379,7 @@ return [
             new \Doc\models\DocPage('print', 'print'),
             new \Doc\models\DocPage('printf', 'printf'),
             new \Doc\models\DocPage('quoted_printable_decode', 'quoted_printable_decode'),
+            new \Doc\models\DocPage('quoted_printable_encode', 'quoted_printable_encode'),
             new \Doc\models\DocPage('soundex', 'soundex'),
             new \Doc\models\DocPage('sprintf', 'sprintf'),
             new \Doc\models\DocPage('str_repeat', 'str_repeat'),
