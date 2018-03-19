@@ -377,6 +377,7 @@ return [
             new \Doc\models\DocPage('str_rot13', 'str_rot13'),
             new \Doc\models\DocPage('str_shuffle', 'str_shuffle'),
             new \Doc\models\DocPage('str_split', 'str_split'),
+            new \Doc\models\DocPage('str_word_count', 'str_word_count'),
             new \Doc\models\DocPage('strchr', 'strchr'),
             new \Doc\models\DocPage('strcasecmp', 'strcasecmp'),
             new \Doc\models\DocPage('strcmp', 'strcmp'),
