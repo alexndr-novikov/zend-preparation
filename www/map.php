@@ -382,6 +382,7 @@ return [
             new \Doc\models\DocPage('strchr', 'strchr'),
             new \Doc\models\DocPage('strcmp', 'strcmp'),
             new \Doc\models\DocPage('strcoll', 'strcoll'),
+            new \Doc\models\DocPage('strcspn', 'strcspn'),
             new \Doc\models\DocPage('strip_tags', 'strip_tags'),
             new \Doc\models\DocPage('strpbrk', 'strpbrk'),
             new \Doc\models\DocPage('strlen', 'strlen'),
