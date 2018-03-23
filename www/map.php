@@ -385,6 +385,7 @@ return [
             new \Doc\models\DocPage('strcspn', 'strcspn'),
             new \Doc\models\DocPage('strip_tags', 'strip_tags'),
             new \Doc\models\DocPage('stripcslashes', 'stripcslashes'),
+            new \Doc\models\DocPage('stripos', 'stripos'),
             new \Doc\models\DocPage('strpbrk', 'strpbrk'),
             new \Doc\models\DocPage('strlen', 'strlen'),
             new \Doc\models\DocPage('strrev', 'strrev'),
