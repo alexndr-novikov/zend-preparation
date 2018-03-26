@@ -390,6 +390,7 @@ return [
             new \Doc\models\DocPage('stristr', 'stristr'),
             new \Doc\models\DocPage('strpbrk', 'strpbrk'),
             new \Doc\models\DocPage('strlen', 'strlen'),
+            new \Doc\models\DocPage('strnatcasecmp', 'strnatcasecmp'),
             new \Doc\models\DocPage('strrev', 'strrev'),
             new \Doc\models\DocPage('strstr', 'strstr'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
