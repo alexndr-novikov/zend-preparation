@@ -393,6 +393,7 @@ return [
             new \Doc\models\DocPage('strnatcasecmp', 'strnatcasecmp'),
             new \Doc\models\DocPage('strnatcmp', 'strnatcmp'),
             new \Doc\models\DocPage('strncasecmp', 'strncasecmp'),
+            new \Doc\models\DocPage('strncmp', 'strncmp'),
             new \Doc\models\DocPage('strrev', 'strrev'),
             new \Doc\models\DocPage('strstr', 'strstr'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
