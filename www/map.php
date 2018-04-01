@@ -397,6 +397,7 @@ return [
             new \Doc\models\DocPage('strpos', 'strpos'),
             new \Doc\models\DocPage('strrchr', 'strrchr'),
             new \Doc\models\DocPage('strrev', 'strrev'),
+            new \Doc\models\DocPage('strripos', 'strripos'),
             new \Doc\models\DocPage('strstr', 'strstr'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
             new \Doc\models\DocPage('substr_count', 'substr_count'),
