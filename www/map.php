@@ -401,6 +401,7 @@ return [
             new \Doc\models\DocPage('strrpos', 'strrpos'),
             new \Doc\models\DocPage('strspn', 'strspn'),
             new \Doc\models\DocPage('strstr', 'strstr'),
+            new \Doc\models\DocPage('strtok', 'strtok'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
             new \Doc\models\DocPage('substr_count', 'substr_count'),
             new \Doc\models\DocPage('trim', 'trim'),
