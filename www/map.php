@@ -405,6 +405,7 @@ return [
             new \Doc\models\DocPage('strtolower', 'strtolower'),
             new \Doc\models\DocPage('strtoupper', 'strtoupper'),
             new \Doc\models\DocPage('strtr', 'strtr'),
+            new \Doc\models\DocPage('substr_compare', 'substr_compare'),
             new \Doc\models\DocPage('str_pad', 'str_pad'),
             new \Doc\models\DocPage('substr_count', 'substr_count'),
             new \Doc\models\DocPage('trim', 'trim'),
