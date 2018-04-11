@@ -418,6 +418,7 @@ return [
             new \Doc\models\DocPage('vfprintf', 'vfprintf'),
             new \Doc\models\DocPage('vprintf', 'vprintf'),
             new \Doc\models\DocPage('vsprintf', 'vsprintf'),
+            new \Doc\models\DocPage('wordwrap', 'wordwrap'),
         ]),
     ]),
 ];
