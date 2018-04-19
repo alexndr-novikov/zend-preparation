@@ -424,5 +424,12 @@ return [
             new \Doc\models\DocPage('vsprintf', 'vsprintf'),
             new \Doc\models\DocPage('wordwrap', 'wordwrap'),
         ]),
+        new \Doc\models\SubCategory('Directories', 'directories', [
+            new \Doc\models\DocPage('The Directory class', 'directory'),
+            new \Doc\models\DocPage('Directory::close', 'directory.close'),
+            new \Doc\models\DocPage('Directory::read', 'directory.read'),
+            new \Doc\models\DocPage('Directory::rewind', 'directory.rewind'),
+            new \Doc\models\DocPage('dir()', 'dir'),
+        ]),
     ]),
 ];
