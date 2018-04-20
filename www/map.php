@@ -429,6 +429,7 @@ return [
             new \Doc\models\DocPage('Directory::close', 'directory.close'),
             new \Doc\models\DocPage('Directory::read', 'directory.read'),
             new \Doc\models\DocPage('Directory::rewind', 'directory.rewind'),
+            new \Doc\models\DocPage('Directory constants', 'directory.constants'),
             new \Doc\models\DocPage('dir()', 'dir'),
         ]),
     ]),
