@@ -431,6 +431,7 @@ return [
             new \Doc\models\DocPage('Directory::rewind', 'directory.rewind'),
             new \Doc\models\DocPage('Directory constants', 'directory.constants'),
             new \Doc\models\DocPage('dir()', 'dir'),
+            new \Doc\models\DocPage('closedir()', 'closedir'),
         ]),
     ]),
 ];
