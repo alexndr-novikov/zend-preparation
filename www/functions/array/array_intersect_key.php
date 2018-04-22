@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('array_intersect_key()');
 
 $arr1 = array_combine(range('a', 'g'), range(0, 6));

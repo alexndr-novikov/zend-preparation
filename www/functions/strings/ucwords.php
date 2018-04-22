@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('ucwords');
 $string = 'Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,

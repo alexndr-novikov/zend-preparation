@@ -2,17 +2,17 @@
 
 namespace Importing;
 
-
 require_once 'basic2.inc';
 require_once 'basic.inc';
 
-use XMLWriter, /* from global namespace */ \Doc\helpers\HTML as H; // using autoloader + aliasing
+use XMLWriter; /* from global namespace */
+use \Doc\helpers\HTML as H; // using autoloader + aliasing
 use function \Foo\info; // import function from another namespace
 use function \basic\Foo\info as basicFooInfo; // inport function from another namespace using aliasing
-use const \basic\Foo\{
-    BASIC_FOO, // import constant
-    NOT_BASIC_FOO // import constant
-};
+use const \basic\Foo\BASIC_FOO;
+use const \basic\Foo\// import constant
+    NOT_BASIC_FOO// import constant
+;
 
 H::h1('Using namespaces: Aliasing/Importing');
 

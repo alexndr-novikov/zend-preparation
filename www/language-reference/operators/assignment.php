@@ -22,7 +22,6 @@ var_dump($b); // int(10)
 
 class Some
 {
-
 }
 
 $link = new Some(); // link, no & usage

@@ -14,7 +14,7 @@ class A
         return $this;
     }
 }
-$obj = new A('a','b','c');
+$obj = new A('a', 'b', 'c');
 $serialized = serialize($obj);
 var_dump($serialized);
 $obj = unserialize($serialized);

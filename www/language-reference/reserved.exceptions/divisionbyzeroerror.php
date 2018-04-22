@@ -2,6 +2,7 @@
 error_reporting(-1); // warning is called first
 
 use \Doc\helpers\HTML;
+
 HTML::h1('DivisionByZeroError');
 
 try {

@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('str_rot13');
 
 $string = implode('', range('a', 'z'));

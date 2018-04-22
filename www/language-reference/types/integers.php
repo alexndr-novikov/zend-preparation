@@ -36,4 +36,4 @@ var_dump((int)2.19829 === 2); // true
 var_dump((int)NAN === 0); // true
 var_dump((int)INF === 0); // true
 
-echo (int)( (0.1+0.7) * 10 ); // echoes 7! warning!
+echo (int)((0.1+0.7) * 10); // echoes 7! warning!

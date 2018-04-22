@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('vfprintf');
 
 $stream = fopen('vfprintf.txt', 'w');

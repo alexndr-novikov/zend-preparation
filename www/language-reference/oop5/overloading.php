@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Overloading');
 
 
@@ -8,34 +9,32 @@ class Container
 {
     private $items = [];
 
-    function __get($name)
+    public function __get($name)
     {
         return $this->items[$name] ?? null;
     }
 
-    function __set($name, $value)
+    public function __set($name, $value)
     {
         $this->items[$name] = $value;
     }
 
-    function __toString() : string
+    public function __toString() : string
     {
         return implode(', ', $this->items);
     }
 
-    function __isset($name)
+    public function __isset($name)
     {
         echo "Looking for {$name} <br>";
         return array_key_exists($name, $this->items);
     }
 
-    function __unset($name)
+    public function __unset($name)
     {
         echo "Unsetting {$name} <br>";
         unset($this->items[$name]);
     }
-
-
 }
 
 $container = new Container;
@@ -65,7 +64,7 @@ class CallableNoMatterWhat
         echo "Called {$name} function statically with arguments " . implode(', ', $arguments) . '<br>';
     }
 
-    function __call($name, $arguments)
+    public function __call($name, $arguments)
     {
         echo "Called {$name} function in object context with arguments " . implode(', ', $arguments) . '<br>';
     }

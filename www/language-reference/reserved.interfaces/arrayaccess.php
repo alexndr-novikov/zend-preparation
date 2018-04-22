@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('ArrayAccess');
 
 
@@ -24,7 +25,7 @@ class Arrayable implements ArrayAccess
     {
         echo 'offsetSet() is also triggered on empty() call';
         HTML::br();
-        if(is_null($offset)) {
+        if (is_null($offset)) {
             $this->innerArray[] = $value;
         } else {
             $this->innerArray[$offset] = $value;

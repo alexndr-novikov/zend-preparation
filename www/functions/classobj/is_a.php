@@ -1,21 +1,22 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('is_a');
 
 
-class A {
-
+class A
+{
 }
 
-class B extends A implements C{
-
+class B extends A implements C
+{
 }
 
-interface C {
-
+interface C
+{
 }
 
-class D {
-
+class D
+{
 }
 
 $a = new A;

@@ -1,9 +1,9 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('array_fill_keys()');
 
 class Foo
 {
-
 }
 
 $array = [1, 100, '2', 'one', 'hundred'];

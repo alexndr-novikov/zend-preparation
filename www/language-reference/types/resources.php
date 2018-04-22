@@ -3,6 +3,6 @@
 
 $resource = curl_init();
 
-var_dump( get_resource_type($resource)); // curl
+var_dump(get_resource_type($resource)); // curl
 
 // converting to resources has no reason

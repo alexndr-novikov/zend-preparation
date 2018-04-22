@@ -2,11 +2,13 @@
 
 error_reporting(-1);
 use \Doc\helpers\HTML;
+
 HTML::h1('Traversable');
 
 $obj = (object)['name' => 'Foo'];
 
-function canBeUsedInForeach($object) {
+function canBeUsedInForeach($object)
+{
     return $object instanceof Traversable;
 }
 

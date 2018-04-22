@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Traits');
 
 HTML::h3('Overriding');
@@ -169,8 +170,10 @@ HTML::h3('Abstract');
 
 trait AbstractTrait
 {
-    public function nonAbstract(){}
-    abstract function abs();
+    public function nonAbstract()
+    {
+    }
+    abstract public function abs();
 }
 
 abstract class WithAbstractTrait
@@ -184,9 +187,7 @@ class ImplementsAbstractTrait
 
     public function abs()
     {
-
     }
-
 }
 
 HTML::h3('Static fields');

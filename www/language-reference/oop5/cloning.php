@@ -7,7 +7,7 @@ class CloneClass
 
 class CustomCloneClass
 {
-    function __clone()
+    public function __clone()
     {
         $this->prop = new static();
     }

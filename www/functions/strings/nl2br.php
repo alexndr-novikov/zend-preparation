@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('nl2br');
 
 $string = 'Lorem ipsum dolor sit amet,

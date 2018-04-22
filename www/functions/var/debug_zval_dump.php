@@ -1,7 +1,9 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('debug_zval_dump');
 
-class B {
+class B
+{
     public $foo1;
     public $foo2;
 
@@ -20,7 +22,6 @@ class B {
     {
         return new static($an_array['foo2'], $an_array['foo1']);
     }
-
 }
 
 $b = new B(1, 2);

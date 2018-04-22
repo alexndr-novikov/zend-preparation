@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('implode');
 
 
@@ -13,6 +14,6 @@ $arrays = [
 
 foreach ($arrays as $array) {
     HTML::dump(implode(' meow ', $array));
-    HTML::dump(implode($array , ' meow ')); // also works but not recommended
+    HTML::dump(implode($array, ' meow ')); // also works but not recommended
     HTML::br();
 }

@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Directory constants');
 
 HTML::h4('DIRECTORY_SEPARATOR:');

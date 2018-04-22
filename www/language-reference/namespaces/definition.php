@@ -4,16 +4,16 @@ namespace namespaceDoc;
 
 use \Doc\helpers\HTML;
 
-
-
-class A {}
+class A
+{
+}
 
 interface namespaceDocInterface
 {
-
 }
 
-function foo() {
+function foo()
+{
     echo __NAMESPACE__ . __FUNCTION__;
 }
 
@@ -23,7 +23,8 @@ namespace additionalNamespace;
 
 use Doc\helpers\HTML;
 
-function foo() {
+function foo()
+{
     echo __NAMESPACE__ . __FUNCTION__ . ' second one';
 }
 

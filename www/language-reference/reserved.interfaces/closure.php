@@ -1,10 +1,11 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Closure');
 
 
 try {
     $closure = new Closure;
-} catch (\Throwable $e){
+} catch (\Throwable $e) {
     echo $e->getMessage();
 }
 HTML::br();
@@ -24,7 +25,8 @@ class SomeClass
 
     public $callable;
 
-    public function setCallable(callable $callable) {
+    public function setCallable(callable $callable)
+    {
         $this->callable = Closure::fromCallable($callable);
     }
 }

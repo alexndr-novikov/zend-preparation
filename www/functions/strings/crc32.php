@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('crc32');
 
 $string = 'السلام علیکم ورحمة الله وبرکاته';

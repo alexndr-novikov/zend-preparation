@@ -1,12 +1,12 @@
 <h1>Anonymous functions</h1><?php
 
 $array = [1, 2, 3];
-array_walk($array, function(&$value, $key){
+array_walk($array, function (&$value, $key) {
     $value *= 2;
 });
 var_dump($array);
 
-$htmlLine = function(string $string) {
+$htmlLine = function (string $string) {
     echo $string;
     echo '<br>';
 };
@@ -15,7 +15,7 @@ $htmlLine('hello');
 $htmlLine('world');
 
 $arrayHandler = function () use (&$array) {
-    array_walk($array, function(&$value, $key){
+    array_walk($array, function (&$value, $key) {
         $value *= 2;
     });
 };
@@ -24,7 +24,7 @@ $arrayHandler();
 var_dump($array);
 
 $arrayHandler = function () use ($array) {
-    array_walk($array, function(&$value, $key){
+    array_walk($array, function (&$value, $key) {
         $value *= 2;
     });
 };
@@ -60,7 +60,7 @@ class StaticThis extends This
 {
     public function getClosure()
     {
-        return static function() {
+        return static function () {
             var_dump($this);
         };
     }

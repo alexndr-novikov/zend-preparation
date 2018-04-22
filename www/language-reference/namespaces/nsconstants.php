@@ -2,6 +2,7 @@
 
 namespace core {
     use \Doc\helpers\HTML;
+
     HTML::h1('namespace keyword and __NAMESPACE__ constant');
 }
 

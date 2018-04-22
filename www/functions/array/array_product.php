@@ -1,6 +1,9 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('array_product()');
-class Foo {}
+class Foo
+{
+}
 $array1 = [1, 2, 3, 4, 5];
 $array2 = [];
 $array3 = [new Foo, '', [], true];

@@ -1,9 +1,9 @@
 <h1>Alternative syntax for control structures</h1><?php
 
 
-if(true):
+if (true):
     //some code
-elseif(true): // else if will cause an error
+elseif (true): // else if will cause an error
     //some code
 else:
     //some code

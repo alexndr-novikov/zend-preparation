@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('References');
 
 $a = 2;
@@ -9,7 +10,9 @@ var_dump($b);
 HTML::br();
 
 
-function foo(&$bar) {} // hack to create references
+function foo(&$bar)
+{
+} // hack to create references
 
 foo($g);
 
@@ -28,12 +31,11 @@ $var2 = 2;
 function workWithGlobals(bool $useGlobals = false)
 {
     global $var1, $var2;
-    if(!$useGlobals) {
+    if (!$useGlobals) {
         $var1 =& $var2;
     } else {
         $_REQUEST['var1'] =& $var2;
     }
-
 }
 HTML::br();
 workWithGlobals();
@@ -47,7 +49,6 @@ $ref = 0;
 $row =& $ref;
 
 foreach ([1, 2, 3] as $row) {
-
 }
 HTML::br();
 var_dump($ref); // 3

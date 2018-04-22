@@ -20,9 +20,7 @@ class Destination
 
     public function __construct(float $latitude, float $longitude)
     {
-        $this->point = new class($latitude, $longitude)
-        {
-
+        $this->point = new class($latitude, $longitude) {
             protected $latitude;
             protected $longitude;
 

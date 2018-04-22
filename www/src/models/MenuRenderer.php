@@ -2,7 +2,6 @@
 
 namespace Doc\models;
 
-
 class MenuRenderer
 {
     /**

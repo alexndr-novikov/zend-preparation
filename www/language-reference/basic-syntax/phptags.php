@@ -2,11 +2,11 @@
     echo "Common tags<br>";
 ?>
 
-<?
+<?php
     echo "Short tags<br>";
 ?>
 
-<?
+<?php
 echo "Short tags cause error if short_open_tag in php.ini is set to false";
 ?>
 

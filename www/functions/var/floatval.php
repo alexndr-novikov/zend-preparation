@@ -24,6 +24,7 @@ $variables = [
 
 foreach ($variables as $variable) {
     HTML::dump($variable);
-    HTML::p('=> ' . floatval($variable));;
+    HTML::p('=> ' . floatval($variable));
+    ;
     HTML::br();
 }

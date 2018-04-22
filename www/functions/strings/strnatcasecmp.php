@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('strnatcasecmp');
 
 HTML::dump(strnatcasecmp('abc', 'Abc'));

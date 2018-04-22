@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('str_getcsv');
 
 $csv = 'id,first_name,last_name,email,gender,ip_address

@@ -14,7 +14,6 @@ class Foo
         echo __CLASS__;
         HTML::br();
     }
-
 }
 
 new Foo;

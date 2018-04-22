@@ -6,8 +6,10 @@ HTML::p('Key only, ignore value');
 
 HTML::pre(array_diff_key([0, 1, 2, 3], [100, 100, 100, 100])); // empty array
 
-HTML::pre(array_diff_key([0, 1, 2, 3],
-    ['0' => 'any value', '1' => 'any value', '2' => 'any value', '3' => 'any value'])); // still empty array
+HTML::pre(array_diff_key(
+    [0, 1, 2, 3],
+    ['0' => 'any value', '1' => 'any value', '2' => 'any value', '3' => 'any value']
+)); // still empty array
 
 
 $faker = \Faker\Factory::create();

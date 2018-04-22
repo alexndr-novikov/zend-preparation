@@ -2,6 +2,7 @@
 namespace GetCalledTest;
 
 use \Doc\helpers\HTML;
+
 HTML::h1('get_called_class');
 
 
@@ -20,7 +21,9 @@ class A
     }
 }
 
-class B extends A {}
+class B extends A
+{
+}
 
 (new A)->whoAmI();
 A::whoAmIStatic();

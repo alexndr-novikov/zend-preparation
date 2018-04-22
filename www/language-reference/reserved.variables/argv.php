@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('$argv');
 
 HTML::p('Call related file in console in the project root');

@@ -1,7 +1,8 @@
 <h1>Callbacks</h1>
 <?php
 
-function process(callable $callback) {
+function process(callable $callback)
+{
     $callback(1);
 }
 
@@ -64,12 +65,11 @@ call_user_func(['B', 'parent::hey']);
 
 class Invokable
 {
-    function __invoke(...$params)
+    public function __invoke(...$params)
     {
         echo implode(':', $params);
     }
-
 }
 
-call_user_func(new Invokable(), 1 , 5, 19);
+call_user_func(new Invokable(), 1, 5, 19);
 call_user_func_array('callback_method', [1 , 5, 19]);

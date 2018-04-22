@@ -1,10 +1,11 @@
 <?php
 declare(strict_types=1);
 use \Doc\helpers\HTML;
+
 HTML::h1('TypeError');
 
-function sum(int $a, int $b) {
-
+function sum(int $a, int $b)
+{
 }
 
 try {

@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('shuffle()');
 
 $array = [10 => 9, 8, 6, 5, 'qwerty' => 4, 3, 32, 1];

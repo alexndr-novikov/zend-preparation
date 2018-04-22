@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('nl_langinfo');
 
 HTML::p('Short days');

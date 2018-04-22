@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Basics');
 error_reporting(E_ALL & ~E_NOTICE);
 

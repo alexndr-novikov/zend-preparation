@@ -6,7 +6,8 @@ echo "<h3>Passing arguments by reference</h3>";
 
 $a = 2;
 
-function byRefModify(&$arg) {
+function byRefModify(&$arg)
+{
     $arg = $arg ** 2;
     return $arg;
 }
@@ -19,16 +20,19 @@ echo byRefModify($a);
 
 echo "<h3>Default argument values</h3>";
 
-function hasOneArgWithDefaultValue($arg = 'default') {
-    echo "Arg is {$arg}"; \Doc\helpers\HTML::br();
+function hasOneArgWithDefaultValue($arg = 'default')
+{
+    echo "Arg is {$arg}";
+    \Doc\helpers\HTML::br();
 }
 
 hasOneArgWithDefaultValue();
 hasOneArgWithDefaultValue('new set');
 
-function hasThreeArgsWithOneWithDefaultValue(int $a, int $b , $someText = 'Sum is: ')
+function hasThreeArgsWithOneWithDefaultValue(int $a, int $b, $someText = 'Sum is: ')
 {
-    echo $someText . ($a+$b);\Doc\helpers\HTML::br();
+    echo $someText . ($a+$b);
+    \Doc\helpers\HTML::br();
 }
 
 hasThreeArgsWithOneWithDefaultValue(1, 2);
@@ -48,17 +52,31 @@ echo ref($a); // 20
 
 echo "<h3>Type declarations</h3>";
 
-function typeHinter(stdClass $erg) { // class name
-
+function typeHinter(stdClass $erg)
+{ // class name
 }
 
-function typeHinter1(Traversable $erg) { /* interface name */ }
-function typeHinter2(array $erg) { /* array */}
-function typeHinter3(callable $erg) { /* callable */}
-function typeHinter4(int $erg) { /* int */}
-function typeHinter5(bool $erg) { /* bool */}
-function typeHinter6(float $erg) { /* float */}
-function typeHinter7(iterable $erg) { /* iterable */}
+function typeHinter1(Traversable $erg)
+{ /* interface name */
+}
+function typeHinter2(array $erg)
+{ /* array */
+}
+function typeHinter3(callable $erg)
+{ /* callable */
+}
+function typeHinter4(int $erg)
+{ /* int */
+}
+function typeHinter5(bool $erg)
+{ /* bool */
+}
+function typeHinter6(float $erg)
+{ /* float */
+}
+function typeHinter7(iterable $erg)
+{ /* iterable */
+}
 
 function booleanAsSynonimTypehint(boolean $arg)
 {
@@ -86,7 +104,10 @@ class A
     }
 }
 
-function AHandler(A $obj = null) {return $obj;}
+function AHandler(A $obj = null)
+{
+    return $obj;
+}
 var_dump(AHandler(new A));
 var_dump(AHandler());
 var_dump(AHandler(null));
@@ -95,7 +116,8 @@ var_dump(AHandler(null));
 echo "<h3>Strict typing</h3>";
 
 
-function floater(float $a) : float {
+function floater(float $a) : float
+{
     return $a;
 }
 var_dump(floater(1)); // int passed, other types if not float will fail
@@ -110,29 +132,38 @@ try {
 echo "<h3>Variable-length argument lists</h3>";
 class Cl
 {
-
 }
 
 $array = array_fill(0, 1000000, new Cl());
 
-function checkClever(Cl ...$cls) {
+function checkClever(Cl ...$cls)
+{
     return true;
 }
 
-function checkBrutal($array) {
+function checkBrutal($array)
+{
     foreach ($array as $value) {
-        if(!$value instanceof Cl) throw new TypeError();
+        if (!$value instanceof Cl) {
+            throw new TypeError();
+        }
     }
     return true;
 }
 
 function argsBefore55() // before 5.5
 {
-    echo "func_num_args(): " . func_num_args();\Doc\helpers\HTML::br();
-    echo "count(func_get_args()): " . count(func_get_args());\Doc\helpers\HTML::br();
-    echo "func_get_args(): "; print_r(func_get_args());\Doc\helpers\HTML::br();
-    echo "func_get_arg(0): " . func_get_arg(0);\Doc\helpers\HTML::br();
-    echo "func_get_arg(100): " . func_get_arg(100);\Doc\helpers\HTML::br();
+    echo "func_num_args(): " . func_num_args();
+    \Doc\helpers\HTML::br();
+    echo "count(func_get_args()): " . count(func_get_args());
+    \Doc\helpers\HTML::br();
+    echo "func_get_args(): ";
+    print_r(func_get_args());
+    \Doc\helpers\HTML::br();
+    echo "func_get_arg(0): " . func_get_arg(0);
+    \Doc\helpers\HTML::br();
+    echo "func_get_arg(100): " . func_get_arg(100);
+    \Doc\helpers\HTML::br();
 }
 
 argsBefore55(1, 2, 3, 4, 5, 6, 7);

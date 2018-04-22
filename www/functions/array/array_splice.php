@@ -4,7 +4,9 @@ HTML::h1('array_splice()');
 
 function testSplice($array, $offset, $length = null, $replacement = [])
 {
-    if(is_null($length)) $length = count($array);
+    if (is_null($length)) {
+        $length = count($array);
+    }
     array_splice($array, $offset, $length, $replacement);
     HTML::pre($array);
 }
@@ -19,4 +21,3 @@ testSplice($array, 1, -1);
 testSplice($array, 1, -1, ['1']);
 testSplice($array, 1, 0, ['1']);
 testSplice($array, 1, 0, '1');
-

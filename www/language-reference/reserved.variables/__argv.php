@@ -7,7 +7,8 @@ if (PHP_SAPI != 'cli') {
 
 function line($content)
 {
-    print $content; print "\r\n";
+    print $content;
+    print "\r\n";
 }
 
 line('$argv content:');

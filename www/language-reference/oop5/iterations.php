@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Object Iteration');
 
 class Iteratable
@@ -32,12 +33,12 @@ class Container implements Iterator
 {
     private $items;
 
-    function __get($name)
+    public function __get($name)
     {
         return $this->items[$name] ?? null;
     }
 
-    function __set($name, $value)
+    public function __set($name, $value)
     {
         $this->items[$name] = $value;
     }

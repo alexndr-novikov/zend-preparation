@@ -4,7 +4,8 @@
 $array = [1, 2, 6 => 3, 4, 5, 6];
 
 foreach ($array as $key => $value) {
-    echo "Index: {$key}, element {$value}";\Doc\helpers\HTML::br();
+    echo "Index: {$key}, element {$value}";
+    \Doc\helpers\HTML::br();
 }
 
 foreach ($array as &$value) {
@@ -30,11 +31,13 @@ foreach ([1, 2, 4] as &$value) { // possible starting from php 5.5
 $array = [1 => 'a', 'b' => 10, 100, null];
 reset($array);
 while (list($key, $value) = each($array)) {
-    echo "Index: {$key}, element {$value}";\Doc\helpers\HTML::br();
+    echo "Index: {$key}, element {$value}";
+    \Doc\helpers\HTML::br();
 }
 // equal to
 foreach ($array as $key => $value) {
-    echo "Index: {$key}, element {$value}";\Doc\helpers\HTML::br();
+    echo "Index: {$key}, element {$value}";
+    \Doc\helpers\HTML::br();
 }
 
 $array = [
@@ -47,14 +50,17 @@ $array = [
         [1, 1, 1],
 ];
 
-foreach ($array as list($col1 , $col2, $col3)) {
-    echo "{$col1} {$col2} {$col3}";\Doc\helpers\HTML::br();
+foreach ($array as list($col1, $col2, $col3)) {
+    echo "{$col1} {$col2} {$col3}";
+    \Doc\helpers\HTML::br();
 }
 
-foreach ($array as list($col1 , $col2)) { // ignore last column
-    echo "{$col1} {$col2}";\Doc\helpers\HTML::br();
+foreach ($array as list($col1, $col2)) { // ignore last column
+    echo "{$col1} {$col2}";
+    \Doc\helpers\HTML::br();
 }
 
-foreach ($array as list(,, $col3)) { // only last column
-    echo "{$col3}";\Doc\helpers\HTML::br();
+foreach ($array as list(, , $col3)) { // only last column
+    echo "{$col3}";
+    \Doc\helpers\HTML::br();
 }

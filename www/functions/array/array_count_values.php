@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('array_count_values()');
 
 $dataFactory = \Faker\Factory::create();

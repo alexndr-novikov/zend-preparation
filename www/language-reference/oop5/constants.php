@@ -5,9 +5,10 @@ class ConstantHandler
     const TWO = self::ONE + 1;
     const SOME = '_' . '_';
 
-    static function echoConst()
+    public static function echoConst()
     {
-        echo static::SOME;\Doc\helpers\HTML::br();
+        echo static::SOME;
+        \Doc\helpers\HTML::br();
     }
 }
 

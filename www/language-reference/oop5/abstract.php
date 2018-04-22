@@ -7,7 +7,7 @@ set_error_handler(function (...$args) {
 
 abstract class AbstractClass
 {
-    protected abstract function func($a, $b);
+    abstract protected function func($a, $b);
 
     public function echoStr()
     {

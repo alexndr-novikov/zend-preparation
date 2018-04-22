@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('crypt');
 
 $string = 'Lorem ipsum dolor sit amet';
@@ -37,4 +38,3 @@ if (CRYPT_SHA512 === 1) {
     HTML::p(crypt($string, '$6$rounds=2200000$usesomesillystringforsalt$'));
     HTML::p('Time to hash 2 200 000 rounds: ' . (microtime(true) - $point));
 }
-?>

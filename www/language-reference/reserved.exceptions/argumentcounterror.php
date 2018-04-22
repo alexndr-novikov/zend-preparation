@@ -1,9 +1,10 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('ArgumentCountError');
 
 
-function sum($a, $b) {
-
+function sum($a, $b)
+{
 }
 
 try {

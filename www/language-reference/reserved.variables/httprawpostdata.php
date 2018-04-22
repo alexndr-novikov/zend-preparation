@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('$HTTP_​RAW_​POST_​DATA');
 ?>
 <p>deleted in php 7. Emulate:</p>

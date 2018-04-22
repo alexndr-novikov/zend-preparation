@@ -2,7 +2,6 @@
 <?php
 class Some
 {
-
 }
 
 var_dump(new Some()); // object

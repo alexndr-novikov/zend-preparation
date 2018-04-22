@@ -5,7 +5,6 @@ HTML::h1('Basics');
 
 class CustomException extends \Exception
 {
-
 }
 
 const BAD_FUNCTION_CALL_EXCEPTION = 0;
@@ -48,4 +47,3 @@ try {
 
 
 HTML::tag('p', 'Continue normal flow');
-

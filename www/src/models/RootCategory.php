@@ -19,12 +19,12 @@ class RootCategory implements interfaces\Renderable
         return $this;
     }
 
-    public function render() : string
+    public function render(): string
     {
-        return "<h3>{$this->name}</h3>" .  $this->renderChildren();
+        return "<h3>{$this->name}</h3>" . $this->renderChildren();
     }
 
-    protected function renderChildren() : string
+    protected function renderChildren(): string
     {
         $output = '';
         foreach ($this->subCategories as $subCategory) {

@@ -82,7 +82,6 @@ namespace Doc\helpers;
  */
 abstract class HTML
 {
-
     const TAG_WHITE_LIST = [
         'a',
         'abbr',
@@ -198,7 +197,6 @@ abstract class HTML
         $tag = "<{$tagName}>$tagValue</{$tagName}>";
 
         return self::handlePrint($tag, $printMode);
-
     }
 
     /**
@@ -251,6 +249,4 @@ abstract class HTML
         var_dump($value);
         HTML::br();
     }
-
-
 }

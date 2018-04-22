@@ -39,7 +39,6 @@ class Nowdoc
     public static $var = <<<'TEXT'
     test
 TEXT;
-
 }
 
 echo Nowdoc::$var;
@@ -97,11 +96,10 @@ $a[7] = ''; // warning - forbidden to add empty string
 <?php
 class Stringable
 {
-    function __toString()
+    public function __toString()
     {
         return '__toString() method output';
     }
-
 }
 ?>
 <p><?= new Stringable(); ?>  - Object</p>

@@ -5,7 +5,6 @@ declare(strict_types=1);
 
 function noReturn()
 {
-
 }
 
 var_dump(noReturn()); //null
@@ -16,7 +15,7 @@ class A
 {
     public $a = 1;
 
-    function &getA()
+    public function &getA()
     {
         return $this->a;
     }
@@ -27,7 +26,8 @@ $a =& $obj->getA();
 $a = 10;
 var_dump($obj);
 
-function voidFunc() : void {
+function voidFunc() : void
+{
     $a = 1 + 1;
     // return $a; //fatal error
 }
@@ -43,7 +43,8 @@ var_dump(stringFunction('a'));
 try {
     var_dump(stringFunction(1));
 } catch (TypeError $e) {
-    echo 'String return expected, got int'; \Doc\helpers\HTML::br();
+    echo 'String return expected, got int';
+    \Doc\helpers\HTML::br();
 }
 
 function stringFunctionUpdated($a) : string

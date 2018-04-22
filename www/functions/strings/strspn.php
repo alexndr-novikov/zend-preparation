@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('strspn');
 
 $str = '42 is the best 1234 answer';

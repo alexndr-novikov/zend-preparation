@@ -3,12 +3,12 @@
 
 class ParentClass
 {
-    function __construct()
+    public function __construct()
     {
         echo 'Class ' . self::class . ' constructor triggered <br>';
     }
 
-    function __destruct()
+    public function __destruct()
     {
         // throw new Exception(''); // causes fatal error
         echo 'Class ' . static::class . ' object destroyed <br>';
@@ -17,7 +17,7 @@ class ParentClass
 
 class DelayedDestroy
 {
-    function __destruct()
+    public function __destruct()
     {
         echo 'Class ' . static::class . ' object destroyed on script end 
             before output HTML formed and sent to browser after HTTP headers sent<br>';
@@ -32,18 +32,15 @@ class Child extends ParentClass
         parent::__construct();
     }
 
-    function __destruct()
+    public function __destruct()
     {
         echo 'Class ' . static::class . ' object destroyed and calls parent one<br>';
         parent::__destruct();
     }
-
-
 }
 
 class ChildNoParentEcho extends ParentClass
 {
-
 }
 
 new ParentClass;
@@ -52,8 +49,7 @@ new Child;
 \Doc\helpers\HTML::br();
 new ChildNoParentEcho;
 
-if((float)substr(PHP_VERSION, 0 , 3) < 7.2)
-{
+if ((float)substr(PHP_VERSION, 0, 3) < 7.2) {
     \Doc\helpers\HTML::br();
     \Doc\helpers\HTML::br();
     class DeprecatedConstructor

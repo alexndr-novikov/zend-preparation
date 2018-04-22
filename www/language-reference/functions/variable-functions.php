@@ -3,7 +3,7 @@
 
 function callFunction(string $functionName, ...$args)
 {
-    if(!function_exists($functionName)) {
+    if (!function_exists($functionName)) {
         throw new Exception('Function doesn\'t exist');
     }
     return $functionName(...$args); // <==
@@ -28,7 +28,9 @@ class MethodCaller
 
     public function setMethod(string $method)
     {
-        if(!method_exists($this, $method)) throw new Exception('Method doesn\'t exist');
+        if (!method_exists($this, $method)) {
+            throw new Exception('Method doesn\'t exist');
+        }
         $this->methodName = $method;
     }
 
@@ -51,7 +53,6 @@ class MethodCaller
     {
         echo 'Reached it 2';
     }
-
 }
 
 $obj = new MethodCaller('test');

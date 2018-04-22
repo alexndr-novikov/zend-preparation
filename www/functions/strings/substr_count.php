@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('substr_count');
 
 $str = 'This is a test string (is)';

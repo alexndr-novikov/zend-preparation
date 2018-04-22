@@ -38,5 +38,4 @@ var_dump(number());
  */
 function getCallback(callable $a) : void
 {
-
 }

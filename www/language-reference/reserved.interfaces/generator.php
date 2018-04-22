@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Generator');
 
 
@@ -41,7 +42,6 @@ function testGenerator($someVal)
 
     yield 1;
     yield 2;
-
 }
 $generator = testGenerator(null);
 $generator->rewind();

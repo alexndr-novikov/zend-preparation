@@ -3,27 +3,22 @@
 
 class ClassA
 {
-
 }
 
 class ClassB
 {
-
 }
 
 class ClassC extends ClassA
 {
-
 }
 
 interface InterfaceA
 {
-
 }
 
 class ClassD implements InterfaceA
 {
-
 }
 
 $a = new ClassA();

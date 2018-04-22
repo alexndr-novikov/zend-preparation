@@ -4,7 +4,6 @@
 
 function classFunction($arg)
 {
-
     class NewClass
     {
         private $innerValue;
@@ -29,10 +28,16 @@ echo classFunction('Hello');
 a();
 \Doc\helpers\HTML::br();
 // b(); - Fatal error
-function a() {echo __FUNCTION__ , __LINE__;}
+function a()
+{
+    echo __FUNCTION__ , __LINE__;
+}
 
-if(true) {
-    function b() {echo __FUNCTION__ , __LINE__;}
+if (true) {
+    function b()
+    {
+        echo __FUNCTION__ , __LINE__;
+    }
 }
 
 a();
@@ -57,8 +62,9 @@ d();
 
 var_dump(new NewClass(''));
 \Doc\helpers\HTML::br();
-function recursive($a) {
-    if($a < 400) {
+function recursive($a)
+{
+    if ($a < 400) {
         echo "$a ";
         recursive($a+1);
     }

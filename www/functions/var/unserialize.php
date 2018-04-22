@@ -13,8 +13,6 @@ class ToSerializeForbidden
     public function __wakeup()
     {
     }
-
-
 }
 
 class ToSerialize
@@ -37,8 +35,6 @@ class ToSerialize
     {
         HTML::p(self::class . ' unserialization triggered');
     }
-
-
 }
 
 $variables = [

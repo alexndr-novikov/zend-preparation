@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('get_object_vars');
 
 
@@ -23,7 +24,6 @@ class DefaultClass
     {
         HTML::pre(get_object_vars($this));
     }
-
 }
 
 $obj = new DefaultClass();

@@ -12,8 +12,9 @@ HTML::p(array_reduce($array, function ($carry, $item) {
 }, 1));
 
 HTML::p('Total count is :' . array_reduce([[1, 1, 1, 1], [1, 1], [1, 1, 1]], function ($carry, $item) {
-        $carry += count($item);
-        return $carry;
-    }, 0));
+    $carry += count($item);
+    return $carry;
+}, 0));
 
-var_dump(array_reduce([], function(){}));
+var_dump(array_reduce([], function () {
+}));

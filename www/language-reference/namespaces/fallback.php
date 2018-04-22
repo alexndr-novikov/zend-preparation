@@ -8,7 +8,6 @@ namespace notGlobal {
 
     class A
     {
-
     }
 
     function time()
@@ -29,7 +28,6 @@ namespace {
 
     class A
     {
-
     }
 
     function foo()

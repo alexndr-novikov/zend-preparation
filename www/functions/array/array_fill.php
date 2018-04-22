@@ -1,10 +1,10 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('array_fill()');
 
 
 class Foo
 {
-
 }
 
 

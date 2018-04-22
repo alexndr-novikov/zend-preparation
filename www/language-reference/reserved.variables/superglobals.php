@@ -1,8 +1,9 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Superglobals');
 
 
-HTML::tag('p','There are 9 of them');
+HTML::tag('p', 'There are 9 of them');
 
 HTML::tag('h4', '$GLOBALS;');
 HTML::tag('pre', print_r($GLOBALS, true));
@@ -45,6 +46,3 @@ var_dump($GLOBALS['_REQUEST'] === $_REQUEST);
 HTML::br();
 var_dump($GLOBALS['_ENV'] === $_ENV);
 HTML::br();
-
-
-

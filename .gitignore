@@ -6,3 +6,5 @@ www/vendor
 www/functions/classobj/__autoload.php.php
 www/vfprintf.txt
 www/fprintf.txt
+.php_cs.cache
+vendor

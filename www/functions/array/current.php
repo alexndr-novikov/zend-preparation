@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('current()');
 
 $array = range('a', 'h', 2);

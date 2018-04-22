@@ -3,22 +3,21 @@
 namespace generators;
 
 use \Doc\helpers\HTML;
+
 HTML::h1('Generators overview');
 
 
 function range()
 {
     $newRange = \range(0, 10);
-    foreach ($newRange as $value)
-    {
+    foreach ($newRange as $value) {
         yield $value * 2;
     }
 }
 
 function rangeLessMemory($start, $end, $step)
 {
-    for($i = $start; $i <= $end; $i += $step)
-    {
+    for ($i = $start; $i <= $end; $i += $step) {
         yield $i;
     }
 }

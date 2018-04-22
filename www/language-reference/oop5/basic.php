@@ -5,10 +5,12 @@ class A
 {
     public function foo()
     {
-        if(isset($this)) {
-            echo "\$this is set in " . get_class($this); \Doc\helpers\HTML::br();
+        if (isset($this)) {
+            echo "\$this is set in " . get_class($this);
+            \Doc\helpers\HTML::br();
         } else {
-            echo "\$this is not set";\Doc\helpers\HTML::br();
+            echo "\$this is not set";
+            \Doc\helpers\HTML::br();
         }
     }
 
@@ -88,11 +90,10 @@ class Func
     public $func;
     public function __construct()
     {
-        $this->func = function (){
+        $this->func = function () {
             echo 'Function<br>';
         };
     }
-
 }
 
 ((new Func)->func)(); // Function<br>
@@ -101,9 +102,10 @@ class Func
 
 class D extends C
 {
-    function foo()
+    public function foo()
     {
-        echo static::class;\Doc\helpers\HTML::br();
+        echo static::class;
+        \Doc\helpers\HTML::br();
         parent::foo();
     }
 }

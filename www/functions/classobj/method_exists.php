@@ -1,25 +1,22 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('method_exists');
 
 class A
 {
     public function fa()
     {
-
     }
 
     protected function fb()
     {
-
     }
     private function fc()
     {
-
     }
 
     private static function fd()
     {
-
     }
 }
 

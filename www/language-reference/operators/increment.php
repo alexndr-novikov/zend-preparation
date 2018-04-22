@@ -30,20 +30,20 @@ var_dump(--$null, ($null--), ++$null, ($null++));
 echo '<br>';
 
 $char = 'a';
-for($i = 0; $i < 100; $i++) {
+for ($i = 0; $i < 100; $i++) {
     echo  ++$char . ' ';
 }
 echo '<br>';
 
 $char = 'A1';
-for($i = 0; $i < 100; $i++) {
+for ($i = 0; $i < 100; $i++) {
     echo  ++$char . ' ';
 }
 echo '<br>';
 
 
 $char = 'A01';
-for($i = 0; $i < 100; $i++) {
+for ($i = 0; $i < 100; $i++) {
     echo  ++$char . ' ';
 }
 echo '<br>';
@@ -52,20 +52,20 @@ echo '<br>';
 
 
 $char = 'a';
-for($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < 10; $i++) {
     echo  --$char . ' ';
 }
 echo '<br>';
 
 $char = 'A1';
-for($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < 10; $i++) {
     echo  --$char . ' ';
 }
 echo '<br>';
 
 
 $char = 'A01';
-for($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < 10; $i++) {
     echo  --$char . ' ';
 }
 echo '<br>';

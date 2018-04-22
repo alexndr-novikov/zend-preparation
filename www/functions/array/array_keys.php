@@ -1,6 +1,8 @@
 <?php use \Doc\helpers\HTML;
 
-class ObjectHandler {}
+class ObjectHandler
+{
+}
 
 HTML::h1('array_keys()');
 

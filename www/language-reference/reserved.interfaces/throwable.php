@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Throwable');
 
 
@@ -12,5 +13,4 @@ try {
     HTML::tag('pre', print_r($e->getTrace(), true));
     HTML::h3('previous:');
     var_dump($e->getPrevious());
-
 }

@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Generator syntax');
 
 
@@ -37,7 +38,7 @@ function allInOneGenerator()
     yield from associativeGenerator();
     yield from referenceGenerator();
     yield from range(100, 105);
-    yield from New ArrayIterator([200, 201]);
+    yield from new ArrayIterator([200, 201]);
     return 'end';
 }
 
@@ -68,5 +69,3 @@ HTML::br();
 HTML::br();
 var_dump(iterator_to_array(allInOneGenerator(), false));
 HTML::br();
-
-

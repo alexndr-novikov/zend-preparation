@@ -26,8 +26,6 @@ class ToSerialize
     {
         HTML::p(self::class . ' unserialization triggered');
     }
-
-
 }
 
 $variables = [

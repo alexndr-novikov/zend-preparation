@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('interface_exists');
 
 
@@ -7,9 +8,9 @@ HTML::br();
 var_dump(interface_exists('SomeInterface', true));
 HTML::br();
 
-if(!interface_exists('SomeInterface', true)) {
-    interface SomeInterface {
-
+if (!interface_exists('SomeInterface', true)) {
+    interface SomeInterface
+    {
     }
     var_dump(interface_exists('SomeInterface', true));
     HTML::br();

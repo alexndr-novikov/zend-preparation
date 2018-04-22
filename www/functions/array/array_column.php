@@ -1,5 +1,6 @@
 <?php use \Doc\helpers\HTML;
 use \Faker\Factory;
+
 HTML::h1('array_column()');
 
 
@@ -19,7 +20,7 @@ class Person
 
 $dataFactory = Factory::create();
 $array = [
-    new Person(1,'Alex', 'Novikov'),
+    new Person(1, 'Alex', 'Novikov'),
     new Person($dataFactory->numberBetween(0, 100), $dataFactory->firstName(), $dataFactory->lastName),
     new Person($dataFactory->numberBetween(0, 100), $dataFactory->firstName(), $dataFactory->lastName),
     new Person($dataFactory->numberBetween(0, 100), $dataFactory->firstName(), $dataFactory->lastName),

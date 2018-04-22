@@ -37,7 +37,7 @@ function getCaesarCipherMap()
 
     $alphabetAfterOffsetGenerator = function ($alphabet, $offset) {
         $offsetPart = array_splice($alphabet, 0, $offset);
-        return array_merge($alphabet , $offsetPart);
+        return array_merge($alphabet, $offsetPart);
     };
     $newAlphabet = $alphabetAfterOffsetGenerator($alphabet, $offset);
 

@@ -5,7 +5,6 @@ HTML::h1('trait_exists');
 
 trait T
 {
-
 }
 
 HTML::dump(trait_exists('T'));

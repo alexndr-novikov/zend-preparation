@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('doubleval');
 
 $variables = [
@@ -23,6 +24,7 @@ $variables = [
 
 foreach ($variables as $variable) {
     HTML::dump($variable);
-    HTML::p('=> ' . doubleval($variable));;
+    HTML::p('=> ' . doubleval($variable));
+    ;
     HTML::br();
 }

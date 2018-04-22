@@ -16,7 +16,6 @@ class ValueObject
     {
         return $this->value;
     }
-
 }
 
 class HalfValueObject extends ValueObject

@@ -1,10 +1,11 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('strtok');
 
 $commitMessage = '[PRJ_12]:added-some-functionality';
 $initialToken = strtok($commitMessage, '[]:-');
 HTML::dump($initialToken);
-while($token = strtok('[]:-')) {
+while ($token = strtok('[]:-')) {
     HTML::dump($token);
 }
 

@@ -9,7 +9,8 @@ require_once 'basic2.inc';
 
 HTML::h1('Using namespaces: Basics');
 
-function info() {
+function info()
+{
     echo 'basics.php info() function';
     \Doc\helpers\HTML::br();
 }

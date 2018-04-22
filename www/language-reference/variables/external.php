@@ -7,9 +7,9 @@ setcookie("External[second]", rand(0, 100), time() + 30);
     <p><input type="submit"></p>
 </form>
 
-<a href="?param.name=some">Link with GET param</a> <?php // . in name is converted to _ ?>
+<a href="?param.name=some">Link with GET param</a> <?php // . in name is converted to _?>
 
-<?php // form with params sent as arrays ?>
+<?php // form with params sent as arrays?>
 <form action="" method="post">
     Name:  <input type="text" name="personal[name]" /><br />
     Mail: <input type="text" name="personal[email]" /><br />
@@ -22,7 +22,7 @@ setcookie("External[second]", rand(0, 100), time() + 30);
     <input type="submit" />
 </form>
 
-<?php //image as form send trigger adds position of click as inputName.x and inputName.y (inputName_x and inputName_y got in backend) ?>
+<?php //image as form send trigger adds position of click as inputName.x and inputName.y (inputName_x and inputName_y got in backend)?>
 <form action="" method="post">
     <input type="image" name="images" src="https://www.google.by/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png">
 </form>

@@ -21,7 +21,7 @@ $a = 1;
 $b = 2;
 $c = 3;
 
-var_dump($b <=> $a,$b <=> $b, $b <=> $c);
+var_dump($b <=> $a, $b <=> $b, $b <=> $c);
 
 
 var_dump('1' == '01'); // true, conversation to int
@@ -68,7 +68,7 @@ $true = '1';
 $a = $true ?: 'somevalue';
 var_dump($a); // string(1)
 
-echo (true?'true':false?'t':'f'); // echos t, equal to ((true?'true':false)?'t':'f')
+echo(true?'true':false?'t':'f'); // echos t, equal to ((true?'true':false)?'t':'f')
 
 $array = ['a' => 1];
 $value = $array['b'] ?? $array['a'];

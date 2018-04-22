@@ -31,30 +31,26 @@ class ObjectHandler
 }
 
 
-ObjectHandler::setClass(new class('New handle echo') implements Handable
-{
+ObjectHandler::setClass(new class('New handle echo') implements Handable {
     use handlerTrait;
 
     public function __construct($prop)
     {
         $this->prop = $prop;
     }
-
 });
 
 ObjectHandler::handleInner();
 
 function get_anon_class()
 {
-    return new class('New handle echo') implements Handable
-    {
+    return new class('New handle echo') implements Handable {
         use handlerTrait;
 
         public function __construct($prop)
         {
             $this->prop = $prop;
         }
-
     };
 }
 \Doc\helpers\HTML::br();

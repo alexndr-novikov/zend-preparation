@@ -12,7 +12,9 @@ a:
 var_dump($a);
 
 for ($i = 0; $i < 100; $i++) {
-    if($i == 50) goto end;
+    if ($i == 50) {
+        goto end;
+    }
 }
 end:
 var_dump($i);

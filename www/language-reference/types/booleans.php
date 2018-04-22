@@ -1,18 +1,17 @@
 <?php
 
-$flag = true || True || TRUE; //equal
+$flag = true || true || true; //equal
 
 // Operators return boolean
 $checkValue = true;
-if($flag == $checkValue) {
+if ($flag == $checkValue) {
     // yep, it's true
 }
 
-if($flag == true) {
-
+if ($flag == true) {
 }
 //is equal to
-if($flag) {
+if ($flag) {
     // and this is preferred
 }
 

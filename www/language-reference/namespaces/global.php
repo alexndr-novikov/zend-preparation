@@ -3,6 +3,7 @@
 namespace notGlobal;
 
 use \Doc\helpers\HTML;
+
 HTML::h1('Global space');
 function is_null($value)
 {

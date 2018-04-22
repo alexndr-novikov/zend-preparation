@@ -2,7 +2,6 @@
 
 namespace Doc;
 
-
 use Doc\models\MenuRenderer;
 
 class Response
@@ -19,7 +18,7 @@ class Response
 
     public function send()
     {
-        if(file_exists($this->filePath)) {
+        if (file_exists($this->filePath)) {
             $this->response =  $this->renderPhpFile(dirname(__DIR__) . '/src/views/layout.php', [
                 'content' => $this->renderPhpFile(dirname(__DIR__) . '/src/views/doc-page.php', [
                     'contentSource' => highlight_file($this->filePath, true),

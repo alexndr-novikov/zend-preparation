@@ -1,17 +1,23 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Late Static Bindings');
 
-class A {
-    public static function who() {
+class A
+{
+    public static function who()
+    {
         echo __CLASS__;
     }
-    public static function test() {
+    public static function test()
+    {
         self::who();
     }
 }
 
-class B extends A {
-    public static function who() {
+class B extends A
+{
+    public static function who()
+    {
         echo __CLASS__;
     }
 }
@@ -19,17 +25,22 @@ class B extends A {
 B::test();
 HTML::br();
 
-class C {
-    public static function who() {
+class C
+{
+    public static function who()
+    {
         echo __CLASS__;
     }
-    public static function test() {
+    public static function test()
+    {
         static::who();
     }
 }
 
-class D extends C {
-    public static function who() {
+class D extends C
+{
+    public static function who()
+    {
         echo __CLASS__;
     }
 }
@@ -42,7 +53,6 @@ class E
 {
     private function foo()
     {
-
     }
 
     public function test()
@@ -53,35 +63,45 @@ class E
 
 class F extends E
 {
-    private function foo() {}
+    private function foo()
+    {
+    }
 }
 
 // (new F)->test(); // fatal error
 
 
-class K {
-    public static function foo() {
+class K
+{
+    public static function foo()
+    {
         static::who();
     }
 
-    public static function who() {
+    public static function who()
+    {
         echo __CLASS__."\n";
     }
 }
 
-class L extends K {
-    public static function test() {
+class L extends K
+{
+    public static function test()
+    {
         K::foo();
         parent::foo();
         self::foo();
     }
 
-    public static function who() {
+    public static function who()
+    {
         echo __CLASS__."\n";
     }
 }
-class M extends L {
-    public static function who() {
+class M extends L
+{
+    public static function who()
+    {
         echo __CLASS__."\n";
     }
 }

@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('each()');
 
 $array = array_combine(range(10, 15), range(100, 150, 10));

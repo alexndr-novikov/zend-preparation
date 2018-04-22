@@ -23,7 +23,6 @@ class DefaultClass
     {
         HTML::pre(get_class_vars(get_class($this)));
     }
-
 }
 
 $obj = new DefaultClass();

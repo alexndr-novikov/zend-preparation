@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('next()');
 
 $arr = range(1, 10, 2);

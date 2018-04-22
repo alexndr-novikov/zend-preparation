@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('array_shift()');
 
 $array = [10 => 0, 1,  'string_key' => true, 3, 4, 'string too' => 5, '1'];

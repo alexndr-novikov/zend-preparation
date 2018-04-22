@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('str_shuffle');
 HTML::p(str_shuffle('str_shuffle'));
 srand(12345);

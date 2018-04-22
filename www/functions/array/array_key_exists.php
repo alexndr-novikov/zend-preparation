@@ -37,6 +37,3 @@ class Foo
 }
 
 var_dump(array_key_exists('bar', new Foo)); // true, but don't use it
-
-
-

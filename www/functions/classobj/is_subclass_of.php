@@ -1,25 +1,33 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('is_subclass_of');
 
 class A
 {
-
 }
 
-class B extends A {
-
+class B extends A
+{
 }
 
-class C extends B {
-
+class C extends B
+{
 }
 
-class D {}
+class D
+{
+}
 
 
-interface Ia {}
-interface IB extends Ia {}
-class F implements IB {}
+interface Ia
+{
+}
+interface IB extends Ia
+{
+}
+class F implements IB
+{
+}
 
 
 

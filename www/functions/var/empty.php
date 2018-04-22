@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('empty');
 
 HTML::dump(empty($var)); // true
@@ -6,8 +7,8 @@ HTML::dump(empty("")); // true
 HTML::dump(empty(0)); // true
 HTML::dump(empty(0.0)); // true
 HTML::dump(empty("0")); // true
-HTML::dump(empty(NULL)); // true
-HTML::dump(empty(FALSE)); // true
+HTML::dump(empty(null)); // true
+HTML::dump(empty(false)); // true
 HTML::dump(empty(array())); // true
 
 $arr = [];

@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('str_repeat');
 
 HTML::p(str_repeat('meow ', 3));

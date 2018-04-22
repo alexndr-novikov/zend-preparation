@@ -1,0 +1,6 @@
+{
+    "require": {
+        "squizlabs/php_codesniffer": "*",
+        "friendsofphp/php-cs-fixer": "^2.11"
+    }
+}

@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('var_dump');
 
 class A
@@ -12,14 +13,14 @@ class A
     private static $f = 6;
 }
 
-class B extends A{
+class B extends A
+{
     public function __debugInfo()
     {
         return [
             'totally false info'
         ];
     }
-
 }
 
 var_dump(new A);

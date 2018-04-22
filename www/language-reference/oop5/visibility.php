@@ -5,7 +5,7 @@ class ParentOne
     private $a = 'a'; // only inside ParentOne
     protected $b = 'b'; // inside ParentOne and it's children, e.g ChildOne
     public $c = 'c'; // everywhere
-    var $d = 'd'; // everywhere
+    public $d = 'd'; // everywhere
 
     const ONE = 1; // everywhere
     protected const TWO = 2; // inside ParentOne and it's children, e.g ChildOne
@@ -13,12 +13,10 @@ class ParentOne
 
     public function a() // everywhere
     {
-
     }
 
     protected function b() // inside ParentOne and it's children, e.g ChildOne
     {
-
     }
 
     private function c() // only inside ParentOne
@@ -30,8 +28,6 @@ class ParentOne
     {
         echo $this->c() . $this->a . self::THREE;
     }
-
-
 }
 
 class ChildOne extends ParentOne
@@ -40,7 +36,7 @@ class ChildOne extends ParentOne
 //    {
 //        echo $this->c() . $this->a . self::THREE;
 //    }
-// this will trigger fatal error cause private fields exist only in parent
+    // this will trigger fatal error cause private fields exist only in parent
 
     public function echoPrivate()
     {

@@ -3,6 +3,7 @@
 namespace exceptionCustomZone;
 
 use \Doc\helpers\HTML;
+
 HTML::h1('Extending exceptions');
 
 

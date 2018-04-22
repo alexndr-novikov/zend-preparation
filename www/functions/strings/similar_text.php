@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('similar_text');
 $string1 = 'Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,

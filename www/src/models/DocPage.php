@@ -23,8 +23,8 @@ class DocPage
 
     private function createFile()
     {
-        if(!file_exists($this->getFilePath())) {
-            if(!is_dir($this->directory)) {
+        if (!file_exists($this->getFilePath())) {
+            if (!is_dir($this->directory)) {
                 mkdir($this->directory);
             }
             file_put_contents($this->getFilePath(), "<?php use \Doc\helpers\HTML;\r\nHTML::h1('{$this->name}');\r\n");
@@ -37,5 +37,4 @@ class DocPage
         $this->createFile();
         return "<li><a href='/{$dir}/{$this->fileName}'>{$this->name}</a></li>";
     }
-
 }

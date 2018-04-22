@@ -48,7 +48,9 @@ class ChildClass extends ParentClass
 
 class ChildClassNoParentCall extends ParentClass
 {
-    public function __construct(){}
+    public function __construct()
+    {
+    }
 }
 
 $obj1 = new ParentClass;

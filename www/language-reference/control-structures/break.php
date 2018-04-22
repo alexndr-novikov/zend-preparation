@@ -11,7 +11,9 @@ while (true) {
     while (true) {
         while (true) {
             $i++;
-            if($i > 10) break 3; // out all while's
+            if ($i > 10) {
+                break 3;
+            } // out all while's
         }
     }
 }
@@ -19,7 +21,9 @@ while (true) {
 echo "Dobby is free!";\Doc\helpers\HTML::br();
 
 for ($i = 0; $i < 100; $i++) {
-    if($i == 10) break;
+    if ($i == 10) {
+        break;
+    }
 }
 
 echo $i;

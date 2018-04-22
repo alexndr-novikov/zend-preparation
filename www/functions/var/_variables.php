@@ -4,8 +4,7 @@ use Doc\helpers\HTML;
 
 function checkType(string $functionName)
 {
-
-    if(!is_callable($functionName)) {
+    if (!is_callable($functionName)) {
         throw new \Exception('Error type check function');
     }
 

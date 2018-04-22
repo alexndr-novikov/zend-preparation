@@ -1,4 +1,5 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('Error');
 
 const SAMPLE_ERROR_CODE = 10;
@@ -13,5 +14,4 @@ try {
     HTML::tag('pre', print_r($e->getTrace(), true));
     HTML::br();
     var_dump($e->getTraceAsString());
-
 }

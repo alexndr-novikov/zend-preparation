@@ -1,16 +1,21 @@
 <?php use \Doc\helpers\HTML;
+
 HTML::h1('var_export');
 
 $a = [1, 2, [2, 3]];
 HTML::dump(var_export($a));
 HTML::dump(var_export($a, true));
 
-class A { public $var; }
+class A
+{
+    public $var;
+}
 $a = new A;
 $a->var = 5;
 HTML::dump(var_export($a, true));
 
-class B {
+class B
+{
     public $foo1;
     public $foo2;
 
@@ -29,7 +34,6 @@ class B {
     {
         return new static($an_array['foo2'], $an_array['foo1']);
     }
-
 }
 
 $b = new B(1, 2);

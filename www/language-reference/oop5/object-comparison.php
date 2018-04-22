@@ -11,7 +11,9 @@ class Comparable
     }
 }
 
-class ComparableExtended extends Comparable { }
+class ComparableExtended extends Comparable
+{
+}
 
 $o = new Comparable(true);
 $same = new ComparableExtended(true);

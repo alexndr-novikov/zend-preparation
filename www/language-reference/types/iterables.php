@@ -12,15 +12,21 @@ function goThrough(iterable $iterable)
 
 goThrough([1, 2, 3]);
 // Type error: goThrough('Not traversable');
-function goThrough1(iterable $iterable = null) {} // default values
-function goThrough2(iterable $iterable = []) {} // default values
+function goThrough1(iterable $iterable = null)
+{
+} // default values
+function goThrough2(iterable $iterable = [])
+{
+} // default values
 
-function returnIterable() : iterable {
+function returnIterable() : iterable
+{
     return [1, 2, 3];
 }
 echo returnIterable(){2};
 
-function generatorsIterable(): iterable {
+function generatorsIterable(): iterable
+{
     yield 1;
     yield 2;
     yield 3;
@@ -33,8 +39,8 @@ foreach (generatorsIterable() as $item) {
 
 class ParentClass
 {
-    public function getArrayReturnIterable(array $array) : iterable {
-
+    public function getArrayReturnIterable(array $array) : iterable
+    {
     }
 }
 
@@ -42,7 +48,6 @@ class ChildClass extends ParentClass
 {
     public function getArrayReturnIterable(iterable $array): Traversable
     {
-
     }
 }
 // in extending array, iterable and Traversable are possible all ways

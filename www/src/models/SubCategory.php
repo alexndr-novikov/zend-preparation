@@ -22,7 +22,6 @@ class SubCategory
 
     public function render($parentDir) : string
     {
-
         return "<h4 class='collapse-control' data-toggle='collapse' data-target='#{$this->id}' aria-expanded='false' aria-controls='collapseExample'>$this->name</h4>"  . $this->renderChildren($parentDir . '/' . $this->directory);
     }
 
@@ -35,5 +34,4 @@ class SubCategory
         $output .= '</ul>';
         return $output;
     }
-
 }

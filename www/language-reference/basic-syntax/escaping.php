@@ -3,7 +3,7 @@
 ?>
 <p>PHP code is separated from plain text. This text is ignored by interpretator and outputs as-is</p>
 <?= 'This text is processed' ?>
-<?php if(true): ?>
+<?php if (true): ?>
 <p>this text is outputted</p>
 <?php else: ?>
     this text is never reached

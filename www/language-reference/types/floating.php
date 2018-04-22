@@ -29,4 +29,3 @@ echo "<br>NaN:<br>";
 echo "NAN == NAN: " ; var_dump(NAN == NAN); echo '<br>'; // false
 echo "NAN !== true: " ; var_dump(NAN !== true); echo '<br>'; // true
 echo "is_nan(NAN): " ; var_dump(is_nan(NAN)); echo '<br>'; // true
-
