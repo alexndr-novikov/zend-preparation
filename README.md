@@ -24,3 +24,8 @@ Add to /etc/hosts
 ``` 
 
 Visit http://zend-exam.dev 
+
+To run phing commands:
+```
+./www/vendor/bin/phing <target>
+```

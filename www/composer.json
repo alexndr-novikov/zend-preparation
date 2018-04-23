@@ -3,7 +3,10 @@
     "require": {
         "symfony/var-dumper": "^3.3",
         "symfony/http-foundation": "*",
-        "fzaninotto/faker": "^1.7"
+        "fzaninotto/faker": "^1.7",
+        "squizlabs/php_codesniffer": "*",
+        "friendsofphp/php-cs-fixer": "^2.11",
+        "phing/phing": "^2.16"
     },
     "authors": [
         {

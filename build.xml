@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="zend-preparation" default="up" basedir="www">
+    <property name="project.docker-compose" value="docker-compose" />
+    <property name="project.docker" value="docker" />
+    <property name="project.phpcs" value="vendor/bin/phpcs" />
+    <property name="project.phpcs-fixer" value="vendor/bin/php-cs-fixer" />
+    <target name="up" description="run docker compose">
+        <exec executable="${project.docker-compose}" logoutput="true">
+            <arg value="up" />
+            <arg value="-d" />
+        </exec>
+    </target>
+    <target name="s" description="stop docker compose">
+        <exec executable="${project.docker-compose}" logoutput="true">
+            <arg value="stop" />
+        </exec>
+    </target>
+    <target name="d" description="remove docker compose">
+        <exec executable="${project.docker-compose}" logoutput="true">
+            <arg value="down" />
+            <arg value="--volumes" />
+        </exec>
+    </target>
+    <target name="bash" description="ssh inside docker container">
+        <exec executable="${project.docker}" logoutput="true">
+            <arg value="exec" />
+            <arg value="-it" />
+            <arg value="php-zend-exam" />
+            <arg value="bash" />
+        </exec>
+    </target>
+    <target name="phpcs" description="run phpcs">
+        <exec executable="${project.phpcs}" logoutput="true">
+            <arg value="--standard=PSR2" />
+            <arg value="src" />
+            <arg value="functions" />
+            <arg value="language-reference" />
+            <arg value="include_path" />
+        </exec>
+    </target>
+    <target name="phpcs-fix" description="run phpcs fixer">
+        <exec executable="${project.phpcs-fixer}" logoutput="true">
+            <arg value="fix" />
+            <arg value="src" />
+            <arg value="--rules=@PSR2" />
+        </exec>
+        <exec executable="${project.phpcs-fixer}" logoutput="true">
+            <arg value="fix" />
+            <arg value="functions" />
+            <arg value="--rules=@PSR2" />
+        </exec>
+        <exec executable="${project.phpcs-fixer}" logoutput="true">
+            <arg value="fix" />
+            <arg value="language-reference" />
+            <arg value="--rules=@PSR2" />
+        </exec>
+        <exec executable="${project.phpcs-fixer}" logoutput="true">
+            <arg value="fix" />
+            <arg value="include_path" />
+            <arg value="--rules=@PSR2" />
+        </exec>
+    </target>
+    <target name="composer-install" description="install composer dependencies from lock file">
+        <exec executable="composer" logoutput="true">
+            <arg value="install" />
+        </exec>
+    </target>
+    <target name="composer-update" description="update composer dependencies from composer.json file">
+        <exec executable="composer" logoutput="true">
+            <arg value="update" />
+        </exec>
+    </target>
+</project>
