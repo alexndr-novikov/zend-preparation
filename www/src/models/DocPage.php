@@ -2,6 +2,8 @@
 
 namespace Doc\models;
 
+use Doc\helpers\HTML;
+
 class DocPage
 {
     private $name;
@@ -35,6 +37,6 @@ class DocPage
     {
         $this->directory = $dir;
         $this->createFile();
-        return "<li><a href='/{$dir}/{$this->fileName}'>{$this->name}</a></li>";
+        return HTML::li(HTML::a("/{$dir}/{$this->fileName}", $this->name, false), false);
     }
 }

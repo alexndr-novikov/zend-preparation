@@ -15,6 +15,7 @@
     <script src="/static/js/jquery-3.2.1.slim.min.js"></script>
     <script src="/static/js/popper.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/script.js"></script>
     <title>Zend exam</title>
 </head>
 <body style="padding: 20px;">
