@@ -432,9 +432,10 @@ return [
             new \Doc\models\DocPage('Directory constants', 'directory.constants'),
             new \Doc\models\DocPage('chdir()', 'chdir'),
             new \Doc\models\DocPage('chroot()', 'chroot'),
-            new \Doc\models\DocPage('getcwd()', 'getcwd'),
-            new \Doc\models\DocPage('dir()', 'dir'),
             new \Doc\models\DocPage('closedir()', 'closedir'),
+            new \Doc\models\DocPage('dir()', 'dir'),
+            new \Doc\models\DocPage('getcwd()', 'getcwd'),
+            new \Doc\models\DocPage('opendir()', 'opendir'),
         ]),
     ]),
 ];
