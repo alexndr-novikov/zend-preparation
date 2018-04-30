@@ -437,6 +437,7 @@ return [
             new \Doc\models\DocPage('getcwd()', 'getcwd'),
             new \Doc\models\DocPage('opendir()', 'opendir'),
             new \Doc\models\DocPage('readdir()', 'readdir'),
+            new \Doc\models\DocPage('rewinddir()', 'rewinddir'),
         ]),
     ]),
 ];
