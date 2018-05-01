@@ -438,6 +438,7 @@ return [
             new \Doc\models\DocPage('opendir()', 'opendir'),
             new \Doc\models\DocPage('readdir()', 'readdir'),
             new \Doc\models\DocPage('rewinddir()', 'rewinddir'),
+            new \Doc\models\DocPage('scandir()', 'scandir'),
         ]),
     ]),
 ];
