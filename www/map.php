@@ -440,5 +440,8 @@ return [
             new \Doc\models\DocPage('rewinddir()', 'rewinddir'),
             new \Doc\models\DocPage('scandir()', 'scandir'),
         ]),
+        new \Doc\models\SubCategory('Filesystem', 'filesystem', [
+            new \Doc\models\DocPage('basename()', 'basename'),
+        ]),
     ]),
 ];
