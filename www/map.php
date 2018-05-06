@@ -443,6 +443,7 @@ return [
         new \Doc\models\SubCategory('Filesystem', 'filesystem', [
             new \Doc\models\DocPage('basename()', 'basename'),
             new \Doc\models\DocPage('dirname()', 'dirname'),
+            new \Doc\models\DocPage('file_exists()', 'file_exists'),
         ]),
     ]),
 ];

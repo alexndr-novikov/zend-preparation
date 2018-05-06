@@ -5,7 +5,7 @@ $(document).ready(function () {
         id.click();
 
         $('html, body').animate({
-            scrollTop: id.offset().top
+            scrollTop: id.offset() ? id.offset().top : 0
         }, 500);
     }
 
