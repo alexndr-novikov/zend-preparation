@@ -447,6 +447,7 @@ return [
             new \Doc\models\DocPage('is_dir()', 'is_dir'),
             new \Doc\models\DocPage('fileatime()', 'fileatime'),
             new \Doc\models\DocPage('filegroup()', 'filegroup'),
+            new \Doc\models\DocPage('fileinode()', 'fileinode'),
             new \Doc\models\DocPage('filemtime()', 'filemtime'),
             new \Doc\models\DocPage('filesize()', 'filesize'),
         ]),
