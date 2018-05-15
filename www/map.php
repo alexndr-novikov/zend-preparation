@@ -450,6 +450,7 @@ return [
             new \Doc\models\DocPage('filegroup()', 'filegroup'),
             new \Doc\models\DocPage('fileinode()', 'fileinode'),
             new \Doc\models\DocPage('filemtime()', 'filemtime'),
+            new \Doc\models\DocPage('fileowner()', 'fileowner'),
             new \Doc\models\DocPage('filesize()', 'filesize'),
             new \Doc\models\DocPage('touch()', 'touch'),
         ]),
