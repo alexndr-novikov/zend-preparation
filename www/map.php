@@ -453,6 +453,7 @@ return [
             new \Doc\models\DocPage('fileowner()', 'fileowner'),
             new \Doc\models\DocPage('filesize()', 'filesize'),
             new \Doc\models\DocPage('lstat()', 'lstat'),
+            new \Doc\models\DocPage('stat()', 'stat'),
             new \Doc\models\DocPage('touch()', 'touch'),
         ]),
     ]),
