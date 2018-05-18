@@ -456,5 +456,8 @@ return [
             new \Doc\models\DocPage('stat()', 'stat'),
             new \Doc\models\DocPage('touch()', 'touch'),
         ]),
+        new \Doc\models\SubCategory('Spl', 'spl', [
+            new \Doc\models\DocPage('SplQueue()', 'splqueue'),
+        ]),
     ]),
 ];
