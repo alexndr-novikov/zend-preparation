@@ -27,7 +27,7 @@ class DocPage
     {
         if (!file_exists($this->getFilePath())) {
             if (!is_dir($this->directory)) {
-                mkdir($this->directory);
+                mkdir($this->directory, 0777, true);
             }
             file_put_contents($this->getFilePath(), "<?php use \Doc\helpers\HTML;\r\nHTML::h1('{$this->name}');\r\n");
         }

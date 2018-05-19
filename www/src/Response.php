@@ -10,12 +10,19 @@ class Response
     private $requestUri;
     private $response = '';
 
+    /**
+     * Response constructor.
+     * @param $requestUri
+     */
     public function __construct($requestUri)
     {
         $this->filePath  = dirname(__DIR__, 1) . $requestUri . '.php';
         $this->requestUri = $requestUri;
     }
 
+    /**
+     * @throws \Throwable
+     */
     public function send()
     {
         if (file_exists($this->filePath)) {
@@ -33,6 +40,12 @@ class Response
         echo $this->response;
     }
 
+    /**
+     * @param $filePath
+     * @param array $_params_
+     * @return string
+     * @throws \Throwable
+     */
     private function renderPhpFile($filePath, $_params_ = [])
     {
         $_obInitialLevel_ = ob_get_level();

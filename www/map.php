@@ -456,8 +456,11 @@ return [
             new \Doc\models\DocPage('stat()', 'stat'),
             new \Doc\models\DocPage('touch()', 'touch'),
         ]),
-        new \Doc\models\SubCategory('Spl', 'spl', [
-            new \Doc\models\DocPage('SplQueue()', 'splqueue'),
+    ]),
+    new \Doc\models\RootCategory('Spl', 'spl', [
+        new \Doc\models\SubCategory('Datastructures', 'datastructures', [
+            new \Doc\models\DocPage('SplQueue', 'splqueue'),
+            new \Doc\models\DocPage('SplFixedArray', 'splfixedarray'),
         ]),
     ]),
 ];
